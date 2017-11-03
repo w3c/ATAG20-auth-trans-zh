@@ -1,0 +1,2093 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>无障碍创作工具指南 (ATAG)  2.0</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+
+body {
+    color: #000000;
+    font-weight: normal;
+    line-height: 1.3;
+}
+
+h2.principle {
+    background-color:#FFFFFF;
+    border:thin solid #666666;
+    color:#000000;
+    font-weight:bold;
+    padding:0.5em;
+}
+h3.guideline {
+    background-color:#CFE8EF !important;
+    border:thin solid #000066;
+    color:#000000;
+    margin-bottom:0;
+    padding:0.5em;
+}
+h4.sc-title {
+    display: inline;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+	font: bold 0.9em sans-serif;
+}
+p.sc-title {
+    display: inline;
+}
+ul.sc-bullets {
+    display:block;
+    padding-left:2em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+	list-style-type: none;
+}
+ul.sc-notes {
+    display:block;
+    padding-left:1em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+	list-style-type: none;
+}
+h5.implementing-heading {
+    font-size:0.9em;
+	font-weight:bold;
+    font-style:normal;
+    margin-top: 0em; 
+    margin-bottom: 0.5em; 
+}
+span.level {
+    background-color:#FFFFBB;
+    font-size: 0.9em;
+}
+div.implementing-link {
+    font-size: 0.9em;
+	margin-top: 0.5em; 	
+	margin-left: 0.5em; 	
+	margin-bottom: 1em; 	
+}
+div.implementing-link a{
+    background-color: #F4F4FF;
+    border-color:#BBBBBB;
+    border-style: solid;
+    border-width: 1px;
+	padding: 0.25em;
+}
+div.implementing-section {
+    border: #DDDDDD 1px solid; 
+	margin-left: 0.5em;
+    margin-top: 0.5em; 
+	padding:0.5em;
+}
+div.implementing-section p {
+    margin-top: 0.5em; 
+    margin-bottom: 0.5em; 
+}
+p.rationale {
+	margin-left: 1em;
+}
+ul.techs-only {
+    border: gray 1px solid; 
+	padding: 0.5em;
+	margin: 0.1em; 
+	list-style:none;
+} 
+strong.handle {
+    font-size: .9em;
+}
+em.note-handle {
+    font-size: .9em;
+}
+dfn {
+	font-weight:bold;
+	font-style:normal;
+}
+.figure {
+    font-size:x-small;
+}
+DL {
+    margin-bottom: 1em;
+}
+.termdef {
+    border-bottom:1px dotted #585858;
+    color:#000000 !important;
+    text-decoration:none;
+}
+dt {margin-top: 0.5em}
+
+div.toc ul.toc li a {
+     margin-top:.3em;
+}
+div.toc ul.toc li ul.toc li a {
+     margin-top:.3em;
+}
+div.toc ul.toc li ul.toc li ul.toc li a {
+     margin-top:0;
+}
+
+
+</style>
+<link href="http://www.w3.org/StyleSheets/TR/W3C-REC.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+<div class="head">
+
+<div class="gl-only">
+<p align="center">[<a href="#contents">Table of Contents</a>] &nbsp;|&nbsp; [<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/">Implementing ATAG 2.0</a>]
+</p>
+<a href="http://www.w3.org/"><img height="48" src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C"/></a>无障碍创作工具指南(ATAG) 2.0</h1>
+ <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Recommendation 24 September 2015</h2>
+ <dl>
+   <dt>This version:</dt>
+   <dd><a href="http://www.w3.org/TR/2015/REC-ATAG20-20150924/">http://www.w3.org/TR/2015/REC-ATAG20-20150924/</a></dd>
+   <dt>Latest version:</dt>
+   <dd><a href="http://www.w3.org/TR/ATAG20/">http://www.w3.org/TR/ATAG20/</a></dd>
+   <dt>Previous version:</dt>
+   <dd><a href="http://www.w3.org/TR/2015/PR-ATAG20-20150721/">http://www.w3.org/TR/2015/PR-ATAG20-20150721/</a></dd>
+   <dt>Editors:</dt>
+   <dd>Jan Richards, Inclusive Design Institute, OCAD University</dd>
+   <dd>Jeanne Spellman, W3C</dd>
+   <dd>Jutta Treviranus, Inclusive Design Institute, OCAD University</dd>
+ </dl>
+ <p>Please refer to the<a href="http://www.w3.org/WAI/AU/errata/"><strong>errata</strong></a>for this document for any errors or issues reported since publication</p>
+ <p>See also<a href="http://www.w3.org/2003/03/Translations/byTechnology?technology=ATAG20"><strong>translations</strong></a></p>
+ <p></p>
+ <p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>© 2015<a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup>(<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a><a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a><a href="http://www.keio.ac.jp/">Keio</a><a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C<a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a><a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>和<a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a>rules apply</p>
+</div>
+<!-- techs-only -->
+
+</div><!-- head -->
+ 
+<hr />
+
+<div id="sect-abstract">
+ <h2><a id="abstract" name="abstract">摘要</a></h2>
+<div class="gl-only">
+ <p>无障碍创作工具指南2.0；为设计出这样的网页内容编辑工具提供了思路，该工具不仅为残疾作者提高了无障碍性（A部分），而且能够支持、促进所有作者创作更加无障碍的网页内容（B部分）。有关介绍和ATAG技术和教育资料的链接，请参阅<a href="http://www.w3.org/WAI/intro/atag.php">无障碍创作工具指南（ATAG）概述</a>。</p>
+</div>
+<!-- techs-only --></div><!-- sect-abstract -->
+ 
+<div id="sect-status">
+ <h2><a id="status" name="status">本文档状态
+</a></h2>
+<p><em>本节介绍本文档在发布时的状态，其他文档可能取代本文档。<a href="http://www.w3.org/TR/">W3C技术报告索引</a>中提供了当前W3C出版物的列表以及该技术报告的最新修订版本。</em></p>
+ 
+<div class="gl-only">
+<h3><a name="status-status" id="status-status"></a>W3C ATAG 2.0的建议</h3>
+<p>这是2015年9月24日来自<a href="http://www.w3.org/WAI/AU/">无障碍创作工具指南工作组</a>，对“无障碍创作工具指南（ATAG）2.0”的<a href="http://www.w3.org/2004/02/Process-20040205/tr.html#RecsW3C">W3C 建议</a>。工作组创建了一份<a href="http://www.w3.org/WAI/AU/CR20/ImplementationReport">执行报告</a>，报告显示该指南已达到<a href="http://www.w3.org/TR/2015/CR-ATAG20-20150604/#exit">放行标准</a>。在审查过此报告并且咨询委员会票选出支持出版的结果后，负责人批准了向建议书过渡。 ATAG 2.0的文本没有更改，只是对代码进行了小的修改来固定间隔，并删除多余或注释的HTML。</p>
+<p>本文档已由W3C成员，软件开发人员以及其他W3C小组和相关各方审核，并被指导团批准为W3C推荐标准。它是一个稳定版本文件，可以用作其他文档的参考或引用材料。在制定该建议书的过程中，W3C的作用是提醒注意规范并促进其广泛部署，这增强了Web的功能和互操作性。</p>
+<p>ATAG 2.0由相关的非规范性文件，<a href="http://www.w3.org/TR/IMPLEMENTING-ATAG20/">实施ATAG 2.0</a><a href="http://www.w3.org/TR/WCAG20-TECHS/"></a>支持。虽然本文档没有ATAG 2.0本身具有的正式身份，但它提供了重要的信息用来理解和运用ATAG 2.0。</p>
+<p>工作组要求将任何意见都发送至<a href="mailto:public-atag2-comments@w3.org">public-atag2-comments@w3.org</a>，<a href="http://lists.w3.org/Archives/Public/public-atag2-comments/">公众评论列表的存档</a>是公开的。收到关于ATAG 2.0建议书的意见不能导致本版指南的更改，但可以在勘误表或ATAG的未来版本中得到解决。对此，工作组不打算对意见作出正式答复。<a href="https://lists.w3.org/Archives/Public/w3c-wai-au/">ATAG 2.0电子邮件列表讨论的档案</a>是公开可用的，从事后续工作的工作组将会处理收到的这些关于本文件的意见。</p>
+</div>
+
+
+
+<!-- techs-only -->
+ 
+ <h3><a name="status-wai" id="status-wai"></a>网络无障碍倡议</h3>
+ <p>本文档是作为<acronym title="World Wide Web Consortium">W3C</acronym><a href="http://www.w3.org/WAI/">Web
+    Accessibility Initiative</a>(WAI)的一部分发布的，<a href="http://www.w3.org/WAI/AU/2010/auwg_charter.html">工作组章程</a>中讨论了AUWG的目标。</p>
+
+ <h3><a name="status-patents" id="status-patents"></a>专利声明</h3>
+ <p>本文档由在<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/">2004年2月5日W3C专利政策</a>下运作的小组制作，W3C保留与该小组可交付成果相关的<a rel="disclosure" href="http://www.w3.org/2004/01/pp-impl/35520/status">任何专利公开的公共列表</a>; 该页面还包括公开专利的说明。得知某项专利满足了<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">基本</a>要求的个人根据<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">W3C专利政策的章节6</a>必须公开信息。
+</p>
+ <p>本文档由<a id="w3c_process_revision" href="http://www.w3.org/2015/Process-20150901/">2015年9月1日W3C处理文档</a>管理。</p>
+
+</div><!-- sect-status -->
+<hr />
+ 
+<div class="toc">
+ <h2><a id="contents" name="contents"></a>目录</h2>
+<div class="gl-only">
+ <ul class="toc">
+   <li><a href="#abstract">摘要</a></li>
+   <li><a href="#status">本文档状态</a></li>
+   <li><a href="#intro">引言</a>
+     <ul class="toc"><li><a href="#intro-organization">ATAG 2.0 指南层次</a></li>
+         <li><a href="#intro_understand_levels_conformance">一致性等级</a></li>
+
+         <li><a href="#intro-integrate_acc_features">无障碍特征整合</a></li>
+     </ul>
+   </li>
+   <li><a href="#guidelines">ATAG 2.0指南</a>
+     <ul class="toc">
+       <li><a href="#part_a">A部分：使创作工具用户界面可访问</a>
+         <ul class="toc">
+           <li><a href="#principle_a1">规则A.1：开发工具界面（应）遵循可应用的无障碍访问性准则.</a>
+             <ul>
+               <li><a href="#gl_a11">指南A.1.1：（在开发工具界面中）应保证基于web的功能是无障碍可访问的</a></li>
+
+               <li><a href="#gl_a12">指南A.1.2：（在开发工具界面中）应保证非基于web的功能是无障碍可访问的</a></li>
+               </ul>
+           </li>
+           <li><a href="#principle_a2">规则A.2：编辑视图是可被感知的</a>
+             <ul>
+               <li><a href="#gl_a21">指南A.2.1：（在开发工具界面中）应使用户可以使用替代内容</a></li>
+               <li><a href="#gl_a22">指南A.2.2  ：（在开发工具界面中）应保证编辑视图之呈现是由程序决定的</a></li>
+             </ul>
+           </li>
+           <li><a href="#principle_a3">规则A.3：编辑视图是可操作的</a>
+             <ul>
+               <li><a href="#gl_a31">指南A.3.1：（在开发工具界面中）应提供对键盘访问的无障碍访问特性.</a></li>
+               <li><a href="#gl_a32">指南A.3.2  （在开发工具界面中）应向开发者提供足够的时间</a></li>
+               <li><a href="#gl_a33">指南A.3.3  ：（在开发工具界面中）应帮助开发者以避免由闪烁引起的癫痫.</a></li>
+               <li><a href="#gl_a34">指南A.3.4：（在开发工具界面中）应从内容结构出发增强导航和编辑功能</a></li>
+
+               <li><a href="#gl_a35">指南A.3.5：（在开发工具界面中）应提供内容搜索功能</a></li>
+               <li><a href="#gl_a36">指南A.3.6：（在开发工具界面中）应提供偏好设置的管理功能</a></li>
+               <li><a href="#gl_a37">指南A.3.7：（在开发工具界面中）应保证预览应至少于市场中的用户代理的无障碍可访问性相同</a></li>
+             </ul>
+           </li>
+           <li><a href="#principle_a4">规则A.4：编辑视图是可被理解的</a>
+             <ul>
+               <li><a href="#gl_a41">指南A.4.1：（在开发工具界面中）应帮助用户避免错误以及纠正错误</a></li>
+
+               <li><a href="#gl_a42">指南A.4.2：（在开发工具界面中）应提供开发工具界面的完整文档，包括所有无障碍访问特性</a></li>
+             </ul>
+           </li>
+           </ul>
+       </li>
+       <li><a href="#part_b">B部分：支持无障碍内容的生成</a>
+         <ul class="toc">
+           <li><a href="#principle_b1">规则B.1:全自动化生成无障碍内容</a>
+             <ul>
+
+               <li><a href="#gl_b11">指南B.1.1：确保自动指定的内容是无障碍的</a></li>
+
+               <li><a href="#gl_b12">指南B.1.2：确保无障碍访问性信息被保存</a></li>
+             </ul>
+           </li>
+           <li><a href="#principle_b2">规则B.2 支持开发者生成无障碍的内容</a>
+             <ul>
+               <li><a href="#gl_b21">指南B.2.1：确保可能无障碍的内容生成是可行的</a></li>
+               <li><a href="#gl_b22">指南B.2.2：指导开发者生成无障碍内容</a></li>
+               <li><a href="#gl_b23">指南B.2.3：帮助开发者管理非文本内容的替代文本</a></li>
+
+               <li><a href="#gl_b24">指南B.2.4：使用无障碍模板帮助开发者</a></li>
+               <li><a href="#gl_b25">指南B.2.5：使用无障碍的预开发内容帮助开发者</a></li>
+             </ul>
+           </li>
+           <li><a href="#principle_b3">规则B.3: 支持开发者改进现有内容的无障碍访问性</a>
+             <ul>
+               <li><a href="#gl_b31">指南B.3.1：帮助开发者检查无障碍问题</a></li>
+
+               <li><a href="#gl_b32">指南B.3.2：帮助开发者修复无障碍问题</a></li>
+             </ul>
+           </li>
+           <li><a href="#principle_b4">规则B.4 开发工具无障碍特性的提升和整合</a>
+             <ul>
+               <li><a href="#gl_b41">指南B.4.1：确保支持无障碍内容生成的特征的无障碍访问性</a></li>
+               <li><a href="#gl_b42">指南B.4.2：确保文档促进无障碍内容的生成</a></li>
+             </ul>
+           </li>
+           </ul>
+       </li>
+     </ul>
+   </li>
+   <li><a href="#Conformance">执行 ATAG 2.0 一致性</a>
+ <ul class="toc">
+   <li><a href="#conf-req">一致性要求</a>
+   <ul>
+      <li><a href="#conf-sc-satisfaction">成功标准满意度</a></li>
+      <li><a href="#conf-rel-wcag">与网页内容无障碍指南（WCAG） 2.0的关系</a></li>
+      <li><a href="#conf-levels">一致性选择和等级</a></li>
+      <li><a href="#conf-techs-produced">关于所生产的 Web 内容技术</a></li>
+      <li><a href="#conf-live-publishing">可实时发布的创作工具
+
+</a></li>
+   </ul>
+   </li>   
+    
+
+   <li><a href="#conf-claim">一致性声明（可选）
+
+</a>
+     <ul>
+     <li><a href="#conf-sc-satisfaction">一致性声明的必要组件
+
+</a></li>
+     <li><a href="#conf-claim-optional-components">一致性声明的可选组件
+
+</a></li>
+     </ul>
+   </li>
+   <li><a href="#conf-disclaimer">免责声明
+
+</a></li>
+     </ul>
+   </li>
+   <li><a href="#glossary">附录A：词汇表</a></li>
+   <li><a href="#references">附录B：参考文献</a></li>
+   <li><a href="#acknowledgments">附录C：致谢</a></li>
+ </ul>
+</div>
+<!-- techs-only -->
+</div><!-- toc -->
+<hr />
+<div id="sect-intro">
+ <h2><a id="intro" name="intro">引言</a></h2>
+
+<div class="gl-only">
+  <p>本节内容是<a class="termdef" href="#def-Informative" title="definition: informative">告知性的</a>。</p>
+ <p>这是“无障碍创作工具指南”（ATAG）2.0版本的W3C推荐（标准）。本文档的建议是为了让<a class="termdef" href="#def-Developer" title="definition: authoring tool developers">创作工具开发者</a>制作出更方便残疾人使用的<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">编辑工具</a>，包括听觉，认知，神经，体能，言语和视觉等残疾群体。</p>
+ <p>创作工具无障碍功能可满足两个重叠的残疾用户组的需求：</p>
+ <ul>
+   <li><a class="termdef" href="#def-Web-Content" title="definition: web content">网站内容</a>的<a class="termdef" href="#def-Author" title="definition: authors">作者</a>，通过确保<a class="termdef" href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface">创作工具用户界面</a>更易于访问（通过<a href="#part_a">本指南的A部分</a>)处理）来满足其需求；</li>
+
+   <li><a class="termdef" href="#def-End-Users" title="definition: end user">终端用户</a>通过确保所有作者都被用于生成<a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible Web content">可访问的Web内容（WCAG）</a>(由<a href="#part_b">指南B部分</a>处理）的编写工具启用，支持和指导来满足其需求。</li>
+   </ul>
+ <p>值得注意的是，虽然满足这两组用户需求的要求在指南中被清楚地分开，但是，用户创作的加速趋势意味着，在现实中，它们是深度相互关联的。 例如，当用户参与在线论坛时，用户频繁地创作随后与其他用户创作的内容合并的内容，创作用户界面中的无障碍问题或其他论坛用户生成的内容会降低论坛的整体无障碍性。</p>
+ <h4><a id="intro-notes" name="intro-notes"></a>注意：</h4>
+ <ol>
+   <li>术语&quot;<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">创作工具</a>&quot;在ATAG 2.0中有一个具体的定义，该定义在<a href="#glossary">术语表</a>中包含几个。<a class="termdef" href="#def-Normative" title="definition: normative">规范性</a>说明。</li>
+
+
+
+   <li>ATAG 2.0在使用术语&quot;<a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible web content">可访问内容（WCAG）</a>&quot;和其他相关术语时，如&quot;<a href="#def-Accessible-Template" title="definition: accessible templates" class="termdef">可访问模板（WCAG</a>&quot;等来指代 &quot;符合<a href="#conf-rel-wcag">WCAG 2.0</a>&quot;的内容，包括A级，AA级或AAA级。（假设任何满足WCAG 2.0成功标准的<a href="#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">Web内容技术</a>都支持无障碍访问）。该术语的定义反映了WCAG 2.0注释，即使符合WCAG 2.0（AAA级）最高级别的内容也不能被 &quot;所有类型、学位或残疾组织的个人访问&quot;。有关更多信息，请参阅&quot;<a href="#conf-rel-wcag">无障碍网页内容指南（WCAG）2.0相关</a>&quot;。</li>
+
+
+
+
+   <li>ATAG 2.0不包括标准的可用性建议，除非在某些情况下它们对残疾人的影响大于对其他人的影响。</li>
+   <li>创作工具仅仅是Web无障碍的一个方面。有关Web无障碍的不同组件以及协同工作的概述，请参阅：
+     <ul>
+   <li><a href="http://www.w3.org/WAI/intro/components.php">Web无障碍的基本组件</a></li>
+   <li><a href="http://www.w3.org/WAI/intro/wcag.php">Web内容无障碍指南（WCAG）概述</a></li>
+   <li><a href="http://www.w3.org/WAI/intro/uaag.php">用户代理无障碍指南（UAAG）概述（&quot;<a class="termdef" href="#def-comb-ua-authoring-tool" title="definition: combined user agent/authoring tools">组合用户代理/创作工具</a>&quot;和&quot;<a class="termdef" href="#def-ua-with-authoring-tool-role" title="definition: user agents with authoring tool modes">具有创作工具模式的用户代理</a>&quot;的开发者特别感兴趣）</li>
+    
+   </ul>
+   </li>
+ </ol>
+ </div>
+<!-- techs-only -->
+<h3><a name="intro-organization" id="intro-organization"></a>ATAG 2.0指导层</h3>
+
+ <p ATAG 2.0的个人和组织很广泛，包括<a class="termdef" href="#def-Developer" title="definition: authoring tool developers">创作工具开发人员</a>、<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">创作工具</a>用户(<a class="termdef" href="#def-Author" title="definition: authors">作者</a>)，创作工具的购买者和决策者。为了满足这些用户的不同需求，以下提供了几个层次的指导：</p>
+ <ul>
+   <li><strong>部分：</strong>ATAG 2.0分为两个部分，每个部分反映了关于创作工具的无障碍的一个关键方面。<a href="#part_a">A部分</a>涉及<a class="termdef" title="defintion: authoring tool user interfaces" href="#def-Authoring-Tool-Interface">创作工具用户界面</a>对残疾作者的无障碍性。<a href="#part_b">B部分</a>涉及创作工具对<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>创作的支持，让身患残疾的<a class="termdef" href="#def-End-Users" title="definition: end user">终端用户</a>能更方便地访问任何一个作者（不仅是身患残疾的作者）创建的网页内容。这两部分包含<a class="termdef" href="#def-Normative" title="definition: normative">规范的</a>&quot;一致性适用说明&quot; ，适用于所有成功的标准：<a href="#part_a_applic_notes">A部分一致性适用说明</a>和<a href="#part_b_applic_notes">B部分一致性适用说明</a>。</li>
+
+   <li><strong>原则：</strong>在每个部分下都有几个高级别的原则来组织准则。</li>
+   <li><strong>准则：</strong>在原则下面是准则。准则提供了创作工具开发人员工作的基本目标，即让创作工具对于身患不同残疾的Web内容作者和最终用户更易操作。准则不可测试，但是提供框架和总体目标，来帮助创作工具开发者理解成功的标准。每个准则包含对于为什么该准则被列入的简要解释。</li>
+   <li><strong>成功标准：</strong>对于每个准则，提供可测试的成功标准，以便当需求和一致性的测试（如设计规格，采购，法规和合同协议）必要时，允许ATAG 2.0使用。为了满足不同组合和不同情形的需求，定义了多个级别的整体和部分一致性（参见<a href="#conf-levels">一致性级别</a>）。</li>
+
+   <li><strong>实施ATAG 2.0文件：</strong><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/">实施ATAG 2.0</a>文件为每个成功标准都提供了额外的非规范化信息，包含成功标准的意图描述，实例和相关的资源链接。<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/"></a></li>
+ </ul>
+ <p>有关ATAG技术和教育资料的链接，请参阅<a href="http://www.w3.org/WAI/intro/atag.php">创作工具辅助功能指南（ATAG）概述</a>。</p>
+ <h3><a name="intro_understand_levels_conformance" id="intro_understand_levels_conformance"></a>一致性级别</h3>
+ <p>为了保证在<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">创作工具</a>的开发中使用ATAG 2.0和<a href="#conf-rel-wcag">WCAG 2.0</a>WCAG 2.0的程序尽可能简单，ATAG 2.0共享了<a href="#conf-rel-wcag">WCAG 2.0</a>3级一致性模型：A级（最低），AA级（中等），AAA级（最高）。<span class="gl-only">有关更多信息，请参阅<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#intro_understand_levels_conformance">理解一致性级别</a>。</span></p>
+
+  
+  
+ <h3><a id="intro-integrate_acc_features" name="intro-integrate_acc_features"></a>无障碍特征整合</h3>
+<p>在实现ATAG 2.0时，<a class="termdef" href="#def-Developer" title="definition: authoring tool developers">创作工具开发人员</a>应该仔细地将支持更多无障碍编写的功能集成到与<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">创作工具</a>的其他功能相同的&quot;外观和感觉&quot;：</p>
+
+<ul>
+ <li>提供更无缝的产品</li>
+ <li>利用<a class="termdef" href="#def-Author" title="definition: authors">作者</a>现有的知识和技能</li>
+ <li>使作者更易接受新的无障碍相关的编修要求</li>
+ <li>减少作者混淆的可能性</li>
+</ul>
+
+</div><!-- sect-intro -->
+
+<hr />
+<div id="sect-guidelines" >
+ <h2><a id="guidelines" name="guidelines"></a>准则</h2>
+ 
+ <div class="gl-only">
+   <p>本节中的成功标准和一致性适用性说明是<a class="termdef" href="#def-Normative" title="definition: normative">规范性</a>的。</p>
+ </div>
+  <!-- techs-only -->
+
+<div id="subsect-tool-accessible">
+<h2><a name="part_a" id="part_a"></a>A部分：使创作工具用户界面可访问</h2>
+
+<h3 id="partA-tool-accessible-notes"><a name="part_a_applic_notes" id="part_a_applic_notes"></a>A部分一致性适用说明</h3>
+   <ol>
+     <li><a name="part_a_applic_note_1" id="part_a_applic_note_1"></a><strong class="handle">&quot;开发工具界面&quot;的范围:</strong>A部分所述标准适用于<a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">开发工具界面</a>中用于开发ATAG2.0所<a href="#conf-techs-produced">&quot;包含&quot;网页内容</a>的所有方面，包括<a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">编辑中web内容</a><a class="termdef" href="#def-View" title="definition: view">视图</a>以及不依赖于编辑中内容的特性（例如：菜单、按钮栏、状态栏、用户设置、<a class="termdef" href="#def-Documentation" title="definition: documentation">使用手册/开发文档</a>）。</li>
+
+     <li><a name="part_a_applic_note_2" id="part_a_applic_note_2"></a><strong class="handle">反映出的无障碍访问性问题：</strong><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>必须保证<a href="#def-Editing-View" title="definition: editing views" class="termdef">编辑视图</a>当中所呈现之<a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">编辑中内容</a>应对<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>中的残障人士具有更高的可访问性（例如：保证<span class="sc-bullet"><a class="termdef" href="#def-Text-Alternatives" title="text alternatives for non-text content">非文本内容的替代文本</a></span>都是<a class="termdef" href="#def-Programmatically-Determined" title="definition: programmatically determined">程序可决定</a>的）。但由编辑中内容直接导致的<a href="#def-Authoring-Interface-Accessibility-Problem" title="definition: authoring tool user interface accessibility problem" class="termdef">开发工具界面中的无障碍访问性问题</a>（例如内容中的图片缺少替代文本）不应被认为是<a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">开发工具界面</a>缺乏无障碍可访问性的理由。)<br />
+
+     </li>
+     <li><a name="part_a_applic_note_3" id="part_a_applic_note_3"></a><strong class="handle">对工具开发者的控制：</strong>A部分所述标准仅适用于由工具<a class="termdef" href="#def-Developer" title="definition: authoring tool developers">开发者</a>提供的<a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">开发工具界面</a>；不适用于由开发工具之开发者以外的任何组织所做的其他更改（例如：用户对默认设置的更改、第三方插件等）。</li>
+     <li><a name="part_a_applic_note_4" id="part_a_applic_note_4"></a><strong class="handle">用户代理工具特性：</strong><a href="#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)" class="termdef">基于web的开发工具</a>可能依赖于<a class="termdef" href="#def-User-Agent" title="definition: user agent">用户代理工具</a>之特性（例如键盘导航、查找功能、显示设置、撤销操作等）以满足（ATAG2.0的）标准。<a href="#conf-claim">一致性声明</a>是可选的，但任何声明都必须<a href="#conf-user-agents">记录用户代理</a>。</li>
+
+     <li><a name="part_a_applic_note_5" id="part_a_applic_note_5"></a><strong class="handle">用于满足A部分所述标准之特性的无障碍访问性：</strong>A部分所述标准适用于整个<a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">开发工具界面</a>，包括所有为满足A部分所述标准所添加的特性（例如：使用手册/开发文档、搜索功能等）；唯一的例外为<a class="termdef" href="#def-Preview" title="definition: preview">预览</a>特性（只要该特性已满足<a href="#gl_a37">指南 A.3.7</a>所述之相关要求）。由于所有开发者，包括其中的残障人士，都能从准确反映<span class="rationale"><a class="termdef" href="#def-End-Users" title="definition: end user">终端用户</a></span>实际使用的用户代理工具之功能，因此预览与编辑界面的要求是不同的。</li>
+     <li><strong class="handle"><a name="part_a_applic_note_6" id="part_a_applic_note_6"></a>不可被辨识的内容：</strong>A部分所述之标准要求开发工具根据网页内容的语义不同而对其进行划分，仅适用于上述语义由程序编码之情况（例如：对某图片进行的描述文字将被视作<a class="termdef" href="#def-Text-Alternatives" title="text alternatives for non-text content">非文本内容的替代文本</a>，当且仅当上述文字通过标签所编码）。</li>
+   </ol>
+	
+   <h2 class="principle"><a name="principle_a1" id="principle_a1"></a>规则A.1：开发工具界面（应）遵循可应用的无障碍访问性准则</h2>
+ 
+   <h3 class="guideline"><a name="gl_a11" id="gl_a11"></a>指南A.1.1：（在开发工具界面中）应保证基于web的功能是无障碍可访问的
+
+<span class="gl-only"><span class="implementing-link">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a11">实施A.1.1</a>]</span></span>
+</h3>
+    
+	<p class="rationale">由来：对于某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>（或开发工具的某些部分）来说，若该工具（或部分）是<a class="termdef" href="#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)">基于web</a>的，则遵守<a href="#conf-rel-wcag">WCAG 2.0</a>标准将有助于所有<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>对该工具（或部分）的访问，包括使用<a class="termdef" href="#def-Assistive-Technology" title="definition: assistive technology">辅助技术</a>的开发者</p>
+
+   <div class="sc-level">
+
+     <h4 class="sc-title"><a id="sc_a111" name="sc_a111"></a>A.1.1.1：基于web的无障碍可访问性
+</h4>
+     <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>包含了<a class="termdef" href="#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)">基于web的用户界面</a>，则上述基于web的用户界面应遵守<a href="#conf-rel-wcag">WCAG 2.0</a>之标准。<span class="level">（<strong>A级</strong>满足WCAG2.0所述之A级标准；<strong>AA级</strong>满足WCAG2.0所述之AA级标准；<strong>AAA级</strong>满足WCAG2.0所述之AAA级标准）</span></p>
+	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a111">实施A.1.1.1</a></div>
+     </div>
+	   
+<!--@@@-->	
+	  
+     <!-- techs-only -->
+	</div><!-- sc-level -->
+	<h3 class="guideline"><a name="gl_a12" id="gl_a12"></a>指南A.1.2：（在开发工具界面中）应保证非基于web的功能是无障碍可访问的
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a12">实施A.1.2</a>]</span>
+
+</h3>
+	  
+   <p class="rationale">由来：对于某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>（或开发工具的某些部分）来说，若该工具（或部分）是<a class="termdef" href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)">非基于web</a>的，则遵守当前<a href="#def-Platform" title="definition: platform" class="termdef">平台</a>之无障碍访问性指南并实现与<a class="termdef" href="#def-Accessibility-Platform-Service" title="definition: accessibility platform architecture">平台无障碍服务</a>之间的通信将有助于所有<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>对该工具（或部分）的访问，包括使用<a class="termdef" href="#def-Assistive-Technology" title="definition: assistive technology">辅助技术</a>的开发者。</p>
+	
+   <div class="sc-level">
+
+     <h4 class="sc-title"><a id="sc_a121" name="sc_a121"></a>A.1.2.1：无障碍可访问性指南
+</h4>
+     <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>包含了<a class="termdef" href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)">非基于web的用户界面</a>，则上述基于web的用户界面应遵守所在平台之无障碍访问性指南。<a class="termdef" href="#def-Platform" title="definition: platform">平台</a><span class="level">（<strong>A级</strong>）</span></p>  
+	 <ul class="sc-notes">
+   <li class="sc-note"><em class="note-handle">注：</em>在（可选的）<a href="#conf-explanation-results">一致性声明结果的解释</a>中，应记录上述被遵守的无障碍访问性指南。</li>
+	</ul>
+	
+	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a121">实施A.1.2.1</a></div>
+ </div>
+	   
+	   
+      <!-- techs-only -->
+
+     <h4 class="sc-title"><a id="sc_a122" name="sc_a122"></a>A.1.2.2：平台无障碍服务
+</h4>
+     <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>包含<a class="termdef" href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)">非基于web的用户界面</a>，则上述非基于web的用户界面应通过<a class="termdef" href="#def-Accessibility-Platform-Service" title="definition: accessibility platform architecture">平台无障碍服务</a>向外提供无障碍访问性信息。<span class="level">（<strong>A级</strong>）</span></p>
+        <ul class="sc-notes">
+   <li class="sc-note"><em class="note-handle">注：</em><em class="note-handle"></em>在（可选的）<a href="#conf-explanation-results">一致性声明结果的解释</a>，应记录上述被实现的无障碍访问性指南。</li>
+     </ul>
+	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a122">实施A.1.2.2</a></div>
+   </div>
+	   
+	   
+      <!-- techs-only -->
+   </div><!-- sc-level -->
+   <h2 class="principle"><a name="principle_a2" id="principle_a2"></a>规则A.2：编辑视图是可被感知的
+</h2>
+    
+   <h3 class="guideline"><a name="gl_a21" id="gl_a21"></a>指南A.2.1：（在开发工具界面中）应使用户可以使用替代内容
+
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a21">实施A.2.1</a>]</span>
+</h3>
+	   
+   <p class="rationale">由来：某些<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>需要访问<a href="#def-Alternative-Content" title="definition: alternative content" class="termdef">替代内容</a>以实现与正在编辑的<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>之间的交互。</p>
+
+   <div class="sc-level">
+	 <h4 class="sc-title"><a id="sc_a211" name="sc_a211"></a>A.2.1.1：已渲染的非文本内容的替代文本
+</h4>
+	 <p class="sc-title">若某个<a class="termdef" href="#def-Editing-View" title="definition: editing view">编辑视图</a>将<a class="termdef" href="#def-Content-Renderings" title="definition: content rendering">渲染</a><a class="termdef" href="#def-Non-Text-Objects" title="definition: non-text objects">非文本内容</a>则任何<a href="#def-Associated-Alternative-Content" title="definition: alternative content" class="termdef">程序相关的</a><a class="termdef" href="#def-Text-Alternatives" title="text alternatives for non-text content">非文本内容的替代文本</a>应<a class="termdef" href="#def-Programmatically-Determined" title="definition: programmatically determined">由程序决定</a>。<span class="level">（<strong>A级</strong>）</span></p>
+	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a211">实施A.2.1.1</a></div>
+	  </div>
+	   
+
+	  <!-- techs-only -->
+
+
+	 <h4 class="sc-title"><a id="sc_a212" name="sc_a212"></a>A.2.1.2：已渲染的时基媒体的替代内容
+</h4><p class="sc-title">若某个<a class="termdef" href="#def-Editing-View" title="definition: editing view">编辑视图</a>将<a class="termdef" href="#def-Content-Renderings" title="definition: content rendering">渲染</a>时基媒体，则应至少满足下述条件之一：<span class="level">（<strong>A级</strong>）</span></p>
+	 <ul class="sc-bullets">
+     <li class="sc-bullet"><strong class="handle">(a) 渲染选项：</strong><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>应提供渲染时基媒体之替代内容的<a href="#def-Option" title="definition: option" class="termdef">选项</a></li>
+	 <li class="sc-bullet"><strong class="handle">(b) 用户代理工具选项：</strong><a class="termdef" href="#def-Author" title="definition: authors">开发者</a>应拥有在<a class="termdef" href="#def-User-Agent" title="definition: user agent">用户代理工具</a>中<a class="termdef" href="#def-Preview" title="definition: preview">预览</a>时基媒体的选项，且上述用户代理工具应能够渲染时基媒体之替代内容。</li>
+	 </ul>
+
+	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a212">实施A.2.1.2</a></div>
+	  </div>
+	   
+
+	  <!-- techs-only -->
+	  
+   </div><!-- sc-level -->
+   <h3 class="guideline"><a name="gl_a22" id="gl_a22"></a>指南A.2.2 ：（在开发工具界面中）应保证编辑视图之呈现是由程序决定的 
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a22">实施A.2.2</a>]</span>
+
+</h3>
+	  
+     <p class="rationale">由来：某些<a class="termdef" href="#def-Editing-View" title="definition: editing view">编辑视图</a>之呈现会传递状态信息，或是提供（<a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">编辑中网页内容</a>）的<a class="termdef" href="#def-End-Users" title="definition: end users">终端用户</a>体验信息，且某些<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>需要通过辅助技术访问编辑视图<a class="termdef" href="#def-Presentation" title="definition: presentation">呈现</a>的细节。</p>
+
+      
+	 <div class="sc-level">
+	   <h4 class="sc-title"><strong class="handle"><a id="sc_a221" name="sc_a221"></a></strong>A.2.2.1：编辑视图的状态指示器</h4>
+	   <p class="sc-title">若某个<a class="termdef" href="#def-Editing-View" title="definition: editing view">编辑视图</a>将要向<span class="rationale"><a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">编辑中网页内容</a></span>添加状态指示器，则上述状态指示器所传递的信息应<a class="termdef" href="#def-Programmatically-Determined" title="definition: programmatically determined">由程序决定</a><span class="level">（<strong>A级</strong>）</span></p>
+<ul class="sc-notes">
+   <li class="sc-note"><em class="note-handle">注：</em>状态指示器可能会指示错误（例如拼写错误）、被追踪的更改、隐藏元素等信息。</li>
+     </ul>
+    		
+			  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a221">实施A.2.2.1</a></div>
+	  </div>
+	   
+	   
+         <!-- techs-only -->
+       </div>
+
+       <div class="sc-level">       
+       <h4 class="sc-title"><a id="sc_a222" name="sc_a222"></a>A.2.2.2：访问已渲染文本的属性
+</h4>
+       <p class="sc-title">若某个<a class="termdef" href="#def-Editing-View" title="definition: editing view">编辑视图</a>将要渲染文本的格式<a href="#def-Web-Content-Properties" title="definition: content property" class="termdef">属性</a>，且上述属性可由<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>在编辑视图中编辑，则该属性应<a class="termdef" href="#def-Programmatically-Determined" title="definition: programmatically determined">由程序决定</a><span class="level">（<strong>AA级</strong>）</span></p>
+       <div class="gl-only">
+       <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a222">实施A.2.2.2</a></div>
+	  </div>
+	   
+
+         
+   </div><!-- sc-level -->
+
+<h2 class="principle"><a name="principle_a3" id="principle_a3"></a>规则A.3：编辑视图是可操作的
+</h2>
+    
+   <h3 class="guideline"><a name="gl_a31" id="gl_a31"></a>指南A.3.1：（在开发工具界面中）应提供对键盘访问的无障碍访问特性
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a31">实施A.3.1</a>]</span></h3>
+	  
+   <p class="rationale">由来：某些<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>可能在行动上有所限制，或是有视力障碍，无法使用鼠标。上述开发者需要使用键盘接口访问<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>的所有功能。</p>
+
+    
+	<div class="sc-level">
+	 <h4 class="sc-title"><a id="sc_a311" name="sc_a311"></a>A.3.1.1：（最低要求）键盘访问
+</h4><p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>的所有功能应均可以通过<a class="termdef" href="#def-Keyboard-Interface" title="definition: keyboard interface">键盘接口</a>完成，且不需要任何击键时间限制，除非某些隐藏功能需要依赖于用户的输入行为路径而非单纯依赖于用户最后输入的内容。<span class="level">（<strong>A级</strong>）</span></p>
+<ul class="sc-notes">
+   <li class="sc-notes"><em class="note-handle">注 1:</em>键盘接口是许多<a class="termdef" href="#def-Platform" title="definition: platform">平台</a>均有提供的变成功能，它允许操作与硬件设备解耦，该标准不意味着必须出现硬件键盘。</li>
+       <li class="sc-note"><em class="note-handle">注 2:</em>依赖于用户输入行为路径的特例仅与隐藏功能相关，与输入技术无关。例如，使用手写功能输入时，输入技术（手写）依赖于用户的输入路径，而其隐藏功能（输入一个字符）则并不依赖于用户的输入路径（例如，同样一个字你可以用多种不同的笔顺书写——译者注）。上述特例包括其它从指向设备中持续采样的输入变量，例如压力、速度、角度等。</li>
+   <li class="sc-note"><em class="note-handle">注 3:</em>该成功标准不禁止，且鼓励在键盘操作的基础上增加别的输入方式（例如，鼠标、触摸）</li></ul>		
+		<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a311">实施A.3.1.1</a></div>
+	  </div>
+	   
+	   
+      
+
+     <h4 class="sc-title"><a id="sc_a312" name="sc_a312"></a>A.3.1.2：无键盘陷阱
+</h4>
+     <p class="sc-title">若键盘焦点可以通过键盘接口的方式移动到某个<a class="termdef" href="#def-UI-Component" title="definition: user interface component">组件</a>上，则焦点应同样可以通过<a class="termdef" href="#def-Keyboard-Interface" title="definition: keyboard interface">键盘接口</a>的方式从该组件上移开。一般来说，上述移开功能可以通过未修改的方向键、制表键或其它标准的退出方式实现，但若某情况下该功能需要通过上述方式以外的其它手段实现，则<span class="sc-bullet"><a class="termdef" href="#def-Author" title="definition: authors">开发者</a></span>应被告知实现该功能的方法。<span class="level">（<strong>A级</strong>）</span></p>
+     <div class="gl-only">
+       <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a312">实施A.3.1.2</a></div>
+	  </div>
+	   
+	   
+      
+   </div><!-- sc-level -->
+		
+   <div class="sc-level">
+     <h4 class="sc-title"><a id="sc_a313" name="sc_a313"></a>A.3.1.3：高效的键盘访问</h4>
+     <p class="sc-title"><a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">开发工具界面</a>应包含某些机制，使得对键盘的访问比<a href="#def-Sequential-Keyboard-Access" title="definition: sequential keyboard navigation" class="termdef">顺序键盘访问</a>更高效。<span class="level">（<strong>AA级</strong>）</span></p>
+	  	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a313">实施A.3.1.3</a></div>
+	  </div>
+	   
+
+      
+   </div><!-- sc-level -->
+		
+   <div class="sc-level">
+     <h4 class="sc-title"><a id="sc_a314" name="sc_a314"></a>A.3.1.4:增强的键盘访问</h4><p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>的所有功能应均可以通过<a class="termdef" href="#def-Keyboard-Interface" title="definition: keyboard interface">键盘接口</a>完成，且不需要任何击键时间限制。<span class="level">（<strong>AAA级</strong>）</span></p>
+	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a314">实施A.3.1.4</a></div>
+	  </div>
+	   
+	   
+      
+	  
+<h4 class="sc-title"><a id="sc_a315" name="sc_a315"></a>A.3.1.5：自定义键盘访问</h4><p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>包括键盘命令，则上述键盘命令应可以自定义。<span class="level">（<strong>AAA级</strong>）</span></p>
+	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a315">实施A.3.1.5</a></div>
+	  </div>
+	   
+
+       
+
+	       <h4 class="sc-title"><a id="sc_a316" name="sc_a316"></a>A.3.1.6 键盘指令的呈现</h4>
+
+<p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>包括键盘指令，则该工具应提供某些方法使得<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>可以指定键盘指令与<a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">开发工具界面</a>之<a class="termdef" href="#def-UI-Component" title="definition: user interface component">组件</a>的关联关系。<span class="level">（<strong>AAA级</strong>）</span>
+		   <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a316">实施A.3.1.6</a></div>
+	  </div>
+	   
+
+            
+   </div><!-- sc-level -->
+   <h3 class="guideline"><a name="gl_a32" id="gl_a32"></a>指南A.3.2 （在开发工具界面中）应向开发者提供足够的时间
+
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a32">实施A.3.2</a>]</span>
+</h3>
+
+   <p class="rationale">由来：某些<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>在键入操作、鼠标操作或其它被要求在较短<a class="termdef" href="#def-Time-Limit" title="definition: time limit">时间限制</a>之内完成的操作（例如点击到某个正在移动的目标）上存在困难。</p>
+	  
+   <div class="sc-level">
+     <h4 class="sc-title"><a id="sc_a321" name="sc_a321"></a>A.3.2.1 （最低要求）自动保存</h4>
+     <p class="sc-title">The <a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>应不包含<a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">会话</a><a class="termdef" href="#def-Time-Limit" title="definition: time limit">时间限制</a>或提供了在会话时间限制结束前自动保存的功能。<span class="level">（<strong>A级</strong>）</span></p>
+	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a321">实施A.3.2.1</a></div>
+	  </div>
+	   
+	   	  
+       
+
+     <h4 class="sc-title"><a id="sc_a322" name="sc_a322"></a>A.3.2.2：计时可调</h4>
+     <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>不应包含<a class="termdef" href="#def-Time-Limit" title="definition: time limit">时间限制</a>，或至少满足以下标准之一：<span class="level">（<strong>A级</strong>）</span></p>
+ <ul class="sc-bullets">
+     <li class="sc-bullet"><strong class="handle">(a) 关闭时间限制：</strong><a class="termdef" href="#def-Author" title="definition: authors">开发者</a>有权在到达时间限制之前关闭该限制；</li>
+     <li class="sc-bullet"><strong class="handle">(b) 调整时间限制：</strong> 开发者有权在到达时间限制之前将上述限制调整至至少默认设置之十倍范围；</li>
+     <li class="sc-bullet"><strong class="handle">(c) 延长时间限制：</strong>开发者在时间限制到达前20秒应得到警告，且应有能力通过某个简单的操作（例如&quot;按下空格键&quot;）以延长时间限制至至少默认设置之十倍范围；</li>
+     <li class="sc-bullet"><strong class="handle">(d) “实时”特例：</strong>时间限制被某个实时任务所依赖（例如：协作系统），且没有替代限制可用；</li>
+     <li class="sc-bullet"><strong class="handle">(e) “必要”特例：</strong>时间限制是必要的，且延长该时间限制将导致某些行为失效；</li>
+     <li class="sc-bullet"><strong class="handle">(f) “20小时”特例：</strong>时间限制大于20小时。</li></ul>
+	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a322">实施A.3.2.2</a></div>
+	  </div>
+	   
+
+	   
+
+      
+     <h4 class="sc-title"><a id="sc_a323" name="sc_a323"></a>A.3.2.3：静态的输入组件</h4>
+     <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>不包含可以接受输入的，但正在移动且移动无法被<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>暂停的<a class="termdef" href="#def-UI-Component" title="definition: user interface component">用户界面组件</a>。<span class="level">（<strong>A级</strong>）</span></p>
+     <div class="gl-only">
+       <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a323">实施A.3.2.3</a></div>
+     </div>
+	   
+	   
+	   
+   </div><!-- sc-level -->
+	
+<div class="sc-level">
+  <h4 class="sc-title"><a id="sc_a324" name="sc_a324"></a>A.3.2.4：（扩展的）输入内容保存</h4>
+  <p class="sc-title"> The<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>应允许被设置为以下功能：可以自动保存被该开发工具编辑的<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>。<span class="level">（<strong>AAA级</strong>）</span></p>
+  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a324">实施A.3.2.4</a></div>
+     </div>
+	   
+
+	
+	</div><!-- sc-level -->
+	<h3 class="guideline"><a name="gl_a33" id="gl_a33"></a>开发工具指南A.3.3 ：（在开发工具界面中）应帮助开发者以避免由闪烁引起的癫痫
+
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a33">实施A.3.3</a>]</span>
+</h3>
+	  
+   <p class="rationale">由来：某些<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>患有光敏性癫痫症，闪烁可能会给他们造成癫痫。</p>
+	  
+   <div class="sc-level">
+     <h4 class="sc-title"><a id="sc_a331" name="sc_a331"></a>A.3.3.1：静态视图选项</h4>
+     <p class="sc-title">若某个<a class="termdef" href="#def-Editing-View" title="definition: editing view">编辑视图</a>可以播放时基内容，则该播放行为不应在载入时必须自动执行，且该播放行为可以被暂停。<span class="level">（<strong>A级</strong>）</span></p>
+	  	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a331">实施A.3.3.1</a></div>
+	  </div>
+	   
+	   
+      
+   </div><!-- sc-level -->
+   <h3 class="guideline"><a name="gl_a34" id="gl_a34"></a>指南A.3.4：（在开发工具界面中）应从内容结构出发增强导航和编辑功能
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a34">实施A.3.4</a>]</span>
+
+</h3>
+	   
+   <p class="rationale">由来：某些<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>在键入操作、鼠标操作上存在困难，<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>利用<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>的结构呈现来简化导航和编辑功能将使上述开发者受益。</p>
+ 
+   <div class="sc-level">
+
+     <h4 class="sc-title"><a id="sc_a341" name="sc_a341"></aA.3.4.1：根据结构导航</h4><p class="sc-title">若某<a class="termdef" href="#def-Editing-View" title="definition: editing view">编辑视图</a>向外公开了<a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">编辑中网页内容</a>的<a href="#def-Markup" title="definition: markup" class="termdef">标签</a><a href="#def-Element" title="definition: element" class="termdef">元素</a>，则上述标签元素（例如：源代码、内容渲染等）应可被选中，且应提供某些机制以实现选择焦点在元素之间的切换。<span class="level">（<strong>AA级</strong>）</span></p>
+	  	  	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a341">实施A.3.4.1</a></div>
+	  </div>
+	   
+
+      
+   </div><!-- sc-level -->
+   <div class="sc-level">
+     <h4 class="sc-title"><a id="sc_a342" name="sc_a342"></a>A.3.4.2：根据程序关系导航</h4><p class="sc-title"> 若某<a class="termdef" href="#def-Editing-View" title="definition: editing view">编辑视图</a>允许在<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>中编辑程序性的<a href="#def-Relationships" title="definition: relationships" class="termdef">关系</a>，则应提供某些机制以实现相关内容之间的导航。<span class="level">（<strong>AAA级</strong>）</span></p>
+     <ul class="sc-notes">
+       <li class="sc-note"><em class="note-handle">注:</em><span class="sc-title">基于<a href="#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">网页内容技术</a>与<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>的自然特性，上述关系包括但不限于：元素嵌套、标题、标签、程序定义、ID关系等。</span></li>
+     </ul>
+	  	  	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a342">实施A.3.4.2</a></div>
+
+	  </div>
+	   
+
+      
+   </div>
+
+   <h3 class="guideline"><a name="gl_a35" id="gl_a35"></a>指南A.3.5：（在开发工具界面中）应提供内容搜索功能
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a35">实施A.3.5</a>]</span>
+</h3>
+	
+   <p class="rationale">由来：某些<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>键入操作、鼠标操作上存在困难，向<span class="sc-title"><a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">编辑中网页内容</a></span>提供文本搜索功能以导航到某个位置将使上述开发者受益。</p>
+    
+	<div class="sc-level">
+
+	 <h4 class="sc-title"><a id="sc_a351" name="sc_a351"></a>A.3.5.1：文本搜索</h4>
+	 <p class="sc-title">若某个开发工具提供了用于编辑文本内容的<a class="termdef" href="#def-Editing-View" title="definition: editing view">编辑视图</a>，则该<a class="termdef" href="#def-Editing-View" title="definition: editing view">编辑视图</a>内应提供文本搜索功能，即下述所有标准均需满足：<span class="level">（<strong>AA级</strong>）</span></p>
+     <ul class="sc-bullets">
+     <li class="sc-bullet"><strong class="handle">(a) 搜索所有可编辑的文本：</strong>任何可被上述编辑视图编辑的文本内容应可被搜索（包括<a href="#def-Alternative-Content" title="definition: alternative content" class="termdef">替代内容</a>）；</li>
+     <li class="sc-bullet"><strong class="handle">(b) 搜索结果匹配：</strong>匹配得到的结果应被呈现给开发者且给予焦点；</li>
+     <li class="sc-bullet"><strong class="handle">(c) 无匹配结果：</strong>若没有匹配结果，则开发者应得到通知；</li>
+     <li class="sc-bullet"><strong class="handle">(d) 双向搜索：</strong>搜索应支持向前搜索与向后搜索。</li>
+     </ul>
+	 <div class="gl-only">
+       <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a351">实施A.3.5.1</a></div>
+     </div>
+	   
+	   
+       
+   </div><!-- sc-level -->
+   <h3 class="guideline"><a name="gl_a36" id="gl_a36"></a>指南A.3.6：（在开发工具界面中）应提供偏好设置的管理功能
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a36">实施A.3.6</a>]</span>
+</h3>
+	  
+   <p class="rationale">由来：某些<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>可能需要以一种方式设置自己的<a class="termdef" href="#def-Display-Settings" title="definition: display settings">显示设置</a>，这种方式与为<a href="#def-Publishing" title="definition: publishing" class="termdef">发布的</a>的<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>定义的<a class="termdef" href="#def-Presentation" title="definition: presentation">呈现</a>方式不同。 提供保存和重新加载键盘和显示器偏好设置的功能对那些随时间不同需求不同（例如由于疲劳）的<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>有好处。</p>
+
+   <div class="sc-level">
+     <h4 class="sc-title"><a id="sc_a361" name="sc_a361"></a>A.3.6.1：独立于显示</h4>
+     <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>包括<a class="termdef" href="#def-Editing-View" title="definition: editing view">编辑视图</a>的<a class="termdef" href="#def-Display-Settings" title="definition: display settings">显示设置</a>，则开发工具应允许<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>在不修改<a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">编辑中网页内容</a>的前提下修改上述设置。<span class="level">（<strong>A级</strong>）</span></p>
+	  	 <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a361">实施A.3.6.1</a></div>
+	  </div>
+	   
+
+      
+   </div><!-- sc-level -->
+	
+   <div class="sc-level">
+
+     <h4 class="sc-title"><strong class="handle"><a id="sc_a362" name="sc_a362"></a></strong>A.3.6.2：保存设置</h4>
+     <p class="sc-title">若某<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>包括<a href="#def-Display-Settings" title="definition: display settings" class="termdef">显示</a>和/或<a href="#def-Control-Settings" title="definition: control settings" class="termdef">控制设置</a>，则上述设置应能够在<a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">开发期</a>之间保存。<span class="level">（<strong>AA级</strong>）</span></p>
+	 <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a362">实施A.3.6.2</a></div>
+     </div>
+	   
+	   	  
+       
+
+     <h4 class="sc-title"><strong class="handle"><a id="sc_a363" name="sc_a363"></a></strong>A.3.6.3：应用平台设置</h4>
+     <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>的各个方面应遵守<a class="termdef" href="#def-Platform" title="definition: platform">平台</a><a href="#def-Display-Settings" title="definition: display settings" class="termdef">显示</a>与<a href="#def-Control-Settings" title="definition: control settings" class="termdef">控制设置</a>之更改，除非<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>使用开发工具选定了更明确的显示与控制设置。<span class="level">（<strong>AA级</strong>）</span></p>
+	  	 <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a363">实施A.3.6.3</a></div>
+	  </div>
+	   
+	   
+       
+</div><!-- sc-level -->
+
+   <h3 class="guideline"><a name="gl_a37" id="gl_a37"></a>指南A.3.7：（在开发工具界面中）应保证预览应至少于市场中的用户代理的无障碍可访问性相同
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a37">实施A.3.7</a>]</span>
+
+</h3>
+	  
+   <p class="rationale">由来：由于<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>的<a class="termdef" href="#def-Workflow" title="definition: workflow">工作流</a>常常包括定时检查<a class="termdef" href="#def-User-Agent" title="definition: user agent">用户代理工具</a>对<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>的显示，许多<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供了<a class="termdef" href="#def-Preview" title="definition: preview">预览</a>特性。开发者中的残障人士应拥有同样的机会以检查上述显示。</p>
+
+	  
+   <div class="sc-level">  	  
+     <h4 class="sc-title"><a id="sc_a371" name="sc_a371"></a>A.3.7.1：（最低要求）预览</h4><p class="sc-title">若提供了<a class="termdef" href="#def-Preview" title="definition: preview">预览</a>，则应至少满足下述标准之一：<span class="level">（<strong>A级</strong>）</span></p>
+	 <ul class="sc-bullets">
+     <li class="sc-bullet"><strong class="handle">(a) 市场中的用户代理：</strong>预览应使用<a class="termdef" href="#def-Inmarket-User-Agent" title="definition: in-market user agent">市场中</a>的<a class="termdef" href="#def-User-Agent" title="definition: user agent">用户代理工具</a>来渲染内容；</li>
+     <li class="sc-bullet"><strong class="handle">(b) UAAG（之A级）：</strong>预览应满足UAAG1.0之A级标准。<cite><a href="#ref-UAAG10">[UAAG10]</a></cite></li>
+	 </ul>
+	  	 <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a371">实施A.3.7.1</a></div>
+	  </div>
+	   
+	   
+       
+   </div><!-- sc-level -->
+
+   <div class="sc-level">
+     <h4 class="sc-title"><a id="sc_a372" name="sc_a372"></a>A.3.7.2：（增强的）预览</h4><p class="sc-title">若提供了<a class="termdef" href="#def-Preview" title="definition: preview">预览</a>则<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>可以指定<a class="termdef" href="#def-User-Agent" title="definition: user agent">用户代理工具</a>对预览进行操作。<span class="level">（<strong>AAA级</strong>）</span></p>
+	  	  	 <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a372">实施A.3.7.2</a></div>
+	  </div>
+	   
+
+      
+
+   </div>
+   <!-- sc-level -->
+   <h2 class="principle"><a name="principle_a4" id="principle_a4"></a>规则A.4：编辑视图是可被理解的
+</h2>
+	  
+   <h3 class="guideline"><a name="gl_a41" id="gl_a41"></a>指南A.4.1：（在开发工具界面中）应帮助用户避免错误以及纠正错误
+
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a41">实施A.4.1</a>]</span>
+
+</h3>
+	  
+   <p class="rationale">由来：某些有不利条件的<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>在动作精读或语音上存在困难，常常被认为会输入更多的错误。</p>
+   <div class="sc-level">
+     <h4 class="sc-title"><a id="sc_a411" name="sc_a411"></a>A.4.1.1：（最低要求）内容更改可逆</h4>
+     <p class="sc-title">所有<a href="#def-Authoring-Action" title="definition: authoring actions" class="termdef">开发行为</a>应<a href="#def-Reversible-Action" title="definition: reversible authoring action" class="termdef">可逆</a>，或<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>在执行该行为前要求<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>进行确认。（<strong><span class="level">Level A</span></strong>）</p>
+     <div class="gl-only">
+       <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a411">实施A.4.1.1</a></div>
+     </div>
+	   
+	   
+       
+
+     <h4 class="sc-title"><a id="sc_a412" name="sc_a412"></a>A.4.1.2：修改设置需要确认</h4>
+     <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供某机制以更改<a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">开发工具界面</a>之设定，则上述机制应同时可以逆转设置之更改，或开发工具在执行更改之前要求<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>确认。（<strong><span class="level">Level A</span></strong>）</p>
+     <div class="gl-only">
+       <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a412">实施A.4.1.2</a></div>
+ </div>
+	   
+	    
+       
+</div><!-- sc-level -->
+	
+   <div class="sc-level">
+     <h4 class="sc-title"><a id="sc_a413" name="sc_a413"></a>A.4.1.3：（增强的）内容更改可逆</h4><p class="sc-title"><a href="#def-Author" title="definition: authors" class="termdef">开发者</a>可以连续地逆转一系列<a href="#def-Reversible-Action" title="definition: reversible authoring action" class="termdef">可逆的开发行为</a>。<span class="level">（<strong>AAA级</strong>）</span></p>
+   <ul class="sc-notes">
+   <li class="sc-note"><em class="note-handle">注:</em>在<a href="#def-End-Auth-Session" title="definition: end of an authoring session" class="termdef">开发期结束点</a>前明确历史开发行为是可以被接受的。</li>
+   </ul>
+	  	<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a413">实施A.4.1.3</a></div>
+	  </div>
+	   
+	   
+     <!-- techs-only -->
+   </div><!-- sc-level -->
+   <h3 class="guideline"><a name="gl_a42" id="gl_a42"></a>指南A.4.2：（在开发工具界面中）应提供开发工具界面的完整文档，包括所有无障碍访问特性
+
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a42">实施A.4.2</a>]</span>
+</h3>
+	  
+   <p class="rationale">由来：某些<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>可能在不借助<a href="#def-Documentation" title="definition: documentation" class="termdef">用户手册/开发文档</a></p>的前提下理解或操作<a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">开发工具界面</a>。
+	
+   <div class="sc-level">
+     <h4 class="sc-title"><a id="sc_a421" name="sc_a421"></a>A.4.2.1：对无障碍访问特性的描述</h4>
+     <p class="sc-title">对于每个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>所满足的ATAG2.0之<a href="#part_a">A部分</a>所述标准的特性，应至少满足以下一条标准：<span class="level">（<strong>A级</strong>）</span></p>
+<ul class="sc-bullets">
+     <li class="sc-bullet"><strong class="handle">(a) 在使用手册/开发文档中有相应描述：</strong>该特性的使用方式应在<a class="termdef" href="#def-Documentation" title="definition: documentation">用户手册/开发文档</a>中有相应描述；</li>
+     <li class="sc-bullet"><strong class="handle">(b) 在界面中有相应描述：</strong>该特性的使用方式应在<a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">开发工具界面</a>中有相应描述；</li>
+     <li class="sc-bullet"><strong class="handle">(c) 由平台提供：</strong>该特性由平台提供；</li>
+     <li class="sc-bullet"><strong class="handle">(d) 未经使用：</strong>该特性未经<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>直接使用（例如：向<a class="termdef" href="#def-Accessibility-Platform-Service" title="definition: accessibility platform architecture">平台无障碍服务</a>传递信息）。）</li>
+	 </ul>     
+	 <ul class="sc-notes">
+<li class="sc-note"><em class="note-handle">注:</em>开发文档的可访问性由<a href="#gl_a11">指南 A.1.1</a>和<a href="#gl_a11">指南 A.1.2</a>负责</li></ul>
+		  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a421">实施A.4.2.1</a></div>
+	  </div>
+	    
+
+         
+   </div><!-- sc-level -->
+
+   <div class="sc-level">
+     <h4 class="sc-title"><a id="sc_a422" name="sc_a422"></a>A.4.2.2：开发工具界面的完整文档</h4>
+     <p class="sc-title">对于<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>的每个特性，应至少满足以下一条标准：<span class="level">（<strong>AA级</strong>）</span></p>
+     <ul class="sc-bullets">
+       <li class="sc-bullet"><strong class="handle">(a) 在使用手册/开发文档中有相应描述：</strong>该特性的使用方式应在<a class="termdef" href="#def-Documentation" title="definition: documentation">用户手册/开发文档</a>中有相应描述；</li>
+       <li class="sc-bullet"><strong class="handle">(b) 在界面中有相应描述：</strong>该特性的使用方式应在<a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">开发工具界面</a>中有相应描述；</li>
+       <li class="sc-bullet"><strong class="handle">(c) 由平台提供：</strong>该特性由平台提供；</li>
+       <li class="sc-bullet"><strong class="handle">(d) 未经使用：</strong>该特性未经<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>直接使用（例如：向<a class="termdef" href="#def-Accessibility-Platform-Service" title="definition: accessibility platform architecture">平台无障碍服务</a>传递信息）。）</li>
+     </ul>
+     <ul class="sc-notes">
+     <li class="sc-note"><em class="note-handle">注:</em>开发文档的可访问性由<a href="#gl_a11">指南 A.1.1</a>和<a href="#gl_a11">指南 A.1.2</a>负责。</li></ul>
+	<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a422">实施A.4.2.2</a></div>
+     </div>
+	    
+
+	   
+      
+   </div><!-- sc-level -->
+ </div><!-- subsect-tool-accessible -->
+
+<div id="subsect-support-production">
+
+<h2><a id="part_b" name="part_b"></a>Part B 支持无障碍内容的生成</h2>
+
+<h3 id="part_b-notes"><a name="part_b_applic_notes" id="part_b_applic_notes"></a>Part B 适用性一致性说明</h3>
+<ol>
+     <li><a name="part_b_applic_note_1" id="part_b_applic_note_1"></a><strong class="handle">开发者可用性：</strong>涉及<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>的Part B的成功标准仅在<a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">开发期</a></li>
+     <li><strong class="handle"><a name="part_b_applic_note_2" id="part_b_applic_note_2"></a>开发者（开发工具）控制：</strong>Part B的成功标准只适用于<a class="termdef" href="#def-Developer" title="definition: authoring tool developers">开发者</a>（开发工具）提供的<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>。这不包括除了开发工具开发者以外的组织对其的修改（例如，第三方插件，用户自定义<a href="#def-Template" title="definition: template" class="termdef">模板</a>，用户修改默认设置）。</li>
+
+     <li><strong class="handle"><a name="part_b_applic_note_3" id="part_b_applic_note_3"></a>开发期结束后的适用性：</strong><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>有责任保证，在<a href="#def-End-Auth-Session" title="definition: end of an authoring session" class="termdef">开发期结束点</a>之后由其自动生成的<a href="#def-Accessible-Web-Content" class="termdef" title="definition: accessible web content">网页内容无障碍(WCAG)</a>（详见<a href="#sc_b111">成功标准 B.1.1.1</a>）。例如，如果开发者（开发工具）改变了内容管理系统的网站<a href="#def-Template" title="definition: template" class="termdef">模板</a>，开发工具不负责保证由开发者造成的内容无障碍访问性的改变，无论是<a class="termdef" href="#def-Content-Author-Gen" title="definition: author generated content">开发者生成</a>的，或者是由开发者指定的其他系统<span class="sc"><a href="#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">自动生成</a></span>的（例如，第三方供稿）。<br />
+
+     </li>
+     <li><strong class="handle"><a name="part_b_applic_note_4" id="part_b_applic_note_4"></a>开发系统：</strong>对于ATAG 2.0对<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>的定义，许多软件可以被同时使用以满足Part B的要求（例如，一个开发工具可以利用第三方软件的无障碍<a href="#def-Checking" title="definition: checking" class="termdef">检测</a>工具）。</li>
+     <li><strong class="handle"><a name="part_b_applic_note_5" id="part_b_applic_note_5"></a>满足Part B无障碍功能的要求的特性：</strong><a href="#part_a">A部分</a>的成功标准适用于整个<a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">开发工具界面</a>，包括所有为满足Part B中成功标准的任何特征（例如，校验工具，修复工具，教程，文档）。</li>
+
+     <li><strong class="handle"><a name="part_b_applic_note_6" id="part_b_applic_note_6"></a>多重开发角色：</strong>一些<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>包括多重<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>角色，每一个角色都有不同的视图<a href="#def-Authoring-Permission" title="definition: author permission" class="termdef">权限</a>和编辑许可（例如，一个内容管理系统可能划分如下角色：设计人员，内容作者，质量把关）在这些情况下，Part B的成功标准应满足整个开发工具，而不是仅仅针对某一个特定的开发角色的视图。<a class="termdef" href="#def-Accessible-Content-Support-Features" title="definition: accessible content support features">无障碍内容支持特性</a>应该对任何开发角色都适用，这是很有用的。</li>
+     <li><strong class="handle"><a name="part_b_applic_note_7" id="part_a_applic_note_7"></a>未识别内容：</strong>当成功标准要求开发工具根据语义标准来分析网页内容，那么该标准只对于那些可被程序编码的语义适用（例如，当图像的文本描述被标记编发，它只能被认为是<a class="termdef" href="#def-Text-Alternatives" title="text alternatives for non-text content">非文本内容的替代文本</a>）。</li>
+   </ol>
+
+<h2 class="principle"><a id="principle_b1" name="principle_b1"></a>规则B.1:全自动化生成无障碍内容
+</h2>
+      
+<h3 class="guideline"><a name="gl_b11" id="gl_b11"></a>规则B.1:全自动化生成无障碍内容<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b11">实施B.1.1</a>]</span></h3>
+
+<p class="rationale">由来：若某<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a><span class="sc"><a href="#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">自动</a></span>产生的<span class="sc"><a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a></span>内包含网页内容的<a href="#def-Web-Content-Accessibility-Problem" title="definition: web content accessibility problems"  class="termdef">无障碍访问性问题(WCAG)</a>，这样会对<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>造成额外的<a href="#def-Repairing" title="definition: repairing" class="termdef">修复</a>任务。</p>
+<div class="sc-level">
+
+ <h4 class="sc-title"><a id="sc_b111" name="sc_b111"></a>B.1.1.1：开发期后自动生成的内容（WCAG）</h4>
+ <p class="sc-title">在<a href="#def-End-Auth-Session" title="definition: end of an authoring session" class="termdef">开发期的结束点</a>后，<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>不会<a href="#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">自动生成</a><a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>，<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>可以认定是<span class="rationale"><a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible Web content">无障碍网页内容（WCAG）</a></span>。<span class="level">（<strong>A级</strong>：满足WCAG2.0 A级成功标准；<strong>AA级</strong>：满足WCAG2.0 A级和AA级成功标准；<strong>AAA级</strong>：满足WCAG2.0所有成功标准）。</span></p>
+<ul class="sc-notes">
+ <li class="sc-note"><em class="note-handle">注:</em>该成功标准仅适用于由<a class="termdef" href="#def-Developer" title="definition: authoring tool developers">开发工具开发者</a>指定的自动化过程，不适用于<a class="termdef" href="#def-Author-Actions-Prevent" title="definition: author actions prevent generation of accessible web content">妨碍网页无障碍内容生成的开发者行为 (WCAG)</a>。</li></ul>
+	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b111">实施B.1.1.1</a></div>
+	  </div>
+	   
+	   
+  <!-- techs-only -->
+  
+ <h4 class="sc-title"><a id="sc_b112" name="sc_b112"></a>B.1.1.2：开发期间自动生成的内容（WCAG）
+</h4>
+   如果<span class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a></span>支持在<a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">开发期</a><span class="sc-title"><a href="#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">自动生成</a></span><span class="sc-title"><a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a></span>的功能，至少满足以下至少一点：<span class="level">（<strong>A级</strong>：满足WCAG2.0 A级成功标准；<strong>AA级</strong>：满足WCAG2.0 A级和AA级成功标准；<strong>AAA级</strong>：满足WCAG2.0所有成功标准）。</span>
+    <ul class="sc-bullets">
+      <li class="sc-bullet"><strong class="handle">(a)无障碍：</strong>开发者没有输入的情况下，内容是<span class="rationale"><a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible Web content">无障碍网页内容（WCAG）</a></span>；</li>
+      <li class="sc-bullet"><strong class="handle">(b)提示：</strong>在自动生成期间，<span class="sc-title"><a href="#def-Author" title="definition: authors" class="termdef">开发者</a></span>可以获得任何关于<a class="termdef" href="#def-Accessibility-Information" title="definition: accessibility information">无障碍信息 (WCAG)</a>需求的提示；</li>
+      <li class="sc-bullet"><strong class="handle">(c)自动检测：</strong>自动生成过程之后，无障碍<a href="#def-Checking" title="definition: checking" class="termdef">检测</a>是自动执行的；</li>
+      <li class="sc-bullet"><strong class="handle">(d)检测建议：</strong>自动生成过程之后，开发工具提示开发者执行无障碍检测。</li>
+    </ul>
+  <ul class="sc-notes">
+   <li class="sc-note"><em class="note-handle">注 1:</em>自动生成过程包括为开发者自动选择<a href="#def-Template" title="definition: template" class="termdef">模板</a></li>
+	<li class="sc-note"><em class="note-handle">注 2:</em>该成功标准仅适用于由<a class="termdef" href="#def-Developer" title="definition: authoring tool developers">开发工具开发者</a>指定的自动化过程，不适用于<a class="termdef" href="#def-Author-Actions-Prevent" title="definition: author actions prevent generation of accessible web content">妨碍网页无障碍内容生成的开发者行为 (WCAG)</a>生成的开发者行为。</li>
+	</ul>
+	<div class="gl-only"><div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b112">实施B.1.1.2</a></div></div>
+	   
+	   	
+  <!-- techs-only -->
+</div>
+<!-- sc-level -->
+
+
+<h3 class="guideline"><a id="gl_b12" name="gl_b12"></a>指南B.1.2：确保无障碍访问性信息被保存
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b12">实施B.1.2</a>]</span></h3>
+
+<p class="rationale">由来：<a class="termdef" href="#def-Accessibility-Information" title="definition: accessibility information">无障碍访问性信息 (WCAG)</a>对于保证<a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible Web content">网页内容无障碍(WCAG)</a>从输入到输出的<a class="termdef" href="#def-Transformation" title="definition: transformation">网页内容转换</a>在一个可比较的级别。</p>
+<div class="sc-level">
+
+ <h4 class="sc-title"><a id="sc_b121" name="sc_b121"></a>B.1.2.1：重构或重编码转换（WCAG）</h4>
+ <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供内容<a class="termdef" href="#def-Restructuring-Transformation" title="definition: restructuring transformations">重构转换</a>或<a class="termdef" href="#def-Recoding-Transformation" title="definition: recoding transformations">重编码转换</a>，且输出的网页内容技术存在类似的机制，则满足以下至少一点：<span class="level">（<strong>A级</strong>：满足WCAG2.0 A级成功标准；<strong>AA级</strong>：满足WCAG2.0 A级和AA级成功标准；<strong>AAA级</strong>：满足WCAG2.0所有成功标准）。</span></p>
+<ul class="sc-bullets">
+	 <li class="sc-bullet"><strong class="handle">(a)保留：</strong><a class="termdef" href="#def-Accessibility-Information" title="definition: accessibility information">无障碍访问性信息 (WCAG)</a>被保留在输出中；</li>
+	 <li class="sc-bullet"><strong class="handle">(b)警告：</strong>有<span class="sc-title"><a class="termdef" href="#def-Default-Option" title="definition: default option" >默认选项</a></span>用来警告开发者那些可能丢失的无障碍信息(WCAG) (例如，将矢量图形保存为光栅图像格式)；</li>
+	 <li class="sc-bullet"><strong class="handle">(c)自动检测：</strong>转换之后，无障碍<a href="#def-Checking" title="definition: checking" class="termdef">检测</a>是自动执行的；</li>
+	 <li class="sc-bullet"><strong class="handle">(d)检测建议：</strong>转换之后，开发工具<a href="#def-Prompt" title="definition: prompt" class="termdef">提示</a>开发者执行无障碍检测。</li></ul>
+  <ul class="sc-notes">
+   <li class="sc-note"><em class="note-handle">注 1:</em>For<a class="termdef" href="#def-Text-Alternatives" title="text alternatives for non-text content">非文本内容的替代文本</a>，详见<a href="#sc_b124">成功标准 B.1.2.4</a></li>
+   <li class="sc-note"><em class="note-handle">注 2:</em>该成功标准仅适用于输出技术<a href="#conf-techs-produced">&quot;包含&quot;</a>在一致性要求中的。</li>
+  </ul>
+	  
+	  	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b121">实施B.1.2.1</a></div>
+	  </div>
+	   
+  
+  
+  
+ <h4 class="sc-title"><a id="sc_b122" name="sc_b122"></a>B.1.2.2：开发工具内的复制粘贴（WCAG）</h4>
+ <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>支持<a class="termdef" href="#def-Structured-Web-Content" title="definition: structured content">结构化内容</a>的复制和粘贴，则当开发工具同时是复制粘贴内容的源和目的地，且源和目的地使用相同的网页内容技术，复制内容中的<a class="termdef" href="#def-Accessibility-Information" title="definition: accessibility information">无障碍信息 (WCAG)</a>被保留。<a href="#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">网页内容技术</a><span class="level">（<strong>A级</strong>：满足WCAG2.0 A级成功标准；<strong>AA级</strong>：满足WCAG2.0 A级和AA级成功标准；<strong>AAA级</strong>：满足WCAG2.0所有成功标准）。</span></p>
+ <div class="gl-only">
+       <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b122">实施B.1.2.2</a></div>
+     </div>
+	   
+  
+
+  
+  
+</div>
+<!-- sc-level -->
+<div class="sc-level">
+ <h4 class="sc-title"><a id="sc_b123" name="sc_b123"></a>B.1.2.3：保持无障碍性最优化</h4>
+ <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供<a href="#def-Optimizing-Transformation" class="termdef" title="definition: authoring tool" >优化网页内容转换</a>，任何输入中的<a class="termdef" href="#def-Accessibility-Information" title="definition: accessibility information">无障碍信息 (WCAG)</a>在输出中被保留。<span class="level">（<strong>A级</strong>）</span></p>
+	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b123">实施B.1.2.3</a></div>
+	  </div>
+	   
+	   
+  
+
+ <h4 class="sc-title"><a id="sc_b124" name="sc_b124"></a>B.1.2.4：保持非文本内容的文本替代
+</h4><p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供输出中的<a class="termdef" href="#def-Non-Text-Objects" title="definition: non-text content">非文本内容</a>的<a class="termdef" href="#def-Transformation" title="definition: transformation">网页内容转换</a>，则如果输出中的<a href="#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">网页内容技术</a>也存在类似机制，该<a class="termdef" href="#def-Text-Alternatives" title="text alternatives for non-text content">非文本内容的替代文本</a>被保留。
+注意：该成功标准仅适用于输出技术包含在一致性要求中的。<span class="level">（<strong>A级</strong>）</span></p>
+ <ul class="sc-notes">
+   <li class="sc-note"><em class="note-handle">注:</em>该成功标准仅适用于输出技术<a href="#conf-techs-produced">&quot;包含&quot;</a>在一致性要求中的。</li>
+ </ul>
+	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b124">实施B.1.2.4</a></div>
+	  </div>
+	   
+
+  
+
+
+</div>
+<!-- sc-level -->
+<h2 class="principle"><a id="principle_b2" name="principle_b2"></a>规则B.2 支持开发者生成无障碍的内容
+</h2>
+<h3 class="guideline"><a name="gl_b21" id="gl_b21"></a>指南B.2.1：确保可能无障碍的内容生成是可行的
+
+
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b21">实施B.2.1</a>]</span>
+</h3>
+		
+     <p class="rationale"><strong><a name="gl_b11-rationale" id="gl_b11-rationale"></a></strong>由来：支持<a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible Web content">无障碍网页内容（WCAG）</a>的生成，至少，可以使用<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>生成符合<a href="#conf-rel-wcag">WCAG 2.0</a>的<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a></p>
+
+     <div class="sc-level">
+       <h4 class="sc-title"><a id="sc_b211" name="sc_b211"></a>B.2.1.1 无障碍内容可行性(WCAG):</h4>
+       <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>不会<a href="#def-Restrictions" class="termdef" title="definition: web content authoring restrictions">限制</a><a href="#def-Author" title="definition: authors" class="termdef">开发者</a>指定的<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>，或者设置的限制不会阻止<span class="rationale"><a href="#conf-rel-wcag">WCAG 2.0</a></span>成功标准的满足。<span class="level">（<strong>A级</strong>：满足WCAG2.0 A级成功标准；<strong>AA级</strong>：满足WCAG2.0 A级和AA级成功标准；<strong>AAA级</strong>：满足WCAG2.0所有成功标准）。</span></p>
+	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b211">实施B.2.1.1</a></div>
+	  </div>
+	   	
+		
+        
+</div><!-- sc-level -->
+<h3 class="guideline"><a id="gl_b22" name="gl_b22"></a>指南B.2.2：指导开发者生成无障碍内容
+
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b22">实施B.2.2</a>]</span>
+</h3>
+		
+<p class="rationale">由来：通过指导<a class="termdef" href="#def-Author" title="definition: author">开发者</a>从一开始就关注<a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible Web content">无障碍网页内容（WCAG）</a>的创建和维护，缓和<a href="#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">网页内容无障碍访问性问题 (WCAG)</a>，同时减少<a href="#def-Repairing" title="definition: repairing" class="termdef">修复</a>工作。</p>
+<div class="sc-level">
+  
+ <h4 class="sc-title"><a id="sc_b221" name="sc_b221"></a>B.2.2.1：突出无障碍选项(WCAG):</h4><p class="sc-title">为达到同样级别的<a href="#def-Authoring-Outcome" title="definition: authoring outcome" class="termdef">开发成果</a>，向<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>提供一系列<a class="termdef" href="#def-Authoring-Action" title="definition: authoring action">开发行为</a>的<a class="termdef" title="definition: options" href="#def-Option">选项</a>（例如，样式文本），那么将生成<a class="termdef" href="#def-Web-Content" title="definition: web content">无障碍网页内容（WCAG）</a>的选项至少要和不能的一样<a class="termdef" href="#def-At-Least-As-Prominent" title="definition: At Least As Prominent">显著</a>。<span class="level">（<strong>A级</strong>：满足WCAG2.0 A级成功标准；<strong>AA级</strong>：满足WCAG2.0 A级和AA级成功标准；<strong>AAA级</strong>：满足WCAG2.0所有成功标准）。</span></p>
+  
+  	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b221">实施B.2.2.1</a></div>
+	  </div>
+	   
+	   
+  
+<h4 class="sc-title"><a id="sc_b222" name="sc_b222"></a>B.2.2.2：设定无障碍属性
+</h4>
+<p class="sc-title">如果开发工具提供设置<a class="termdef" href="#def-Web-Content-Properties" title="definition: web content properties">网页内容属性</a>的机制（例如，属性值），那么也应该提供设置与<a class="termdef" href="#def-Accessibility-Information" title="definition: accessibility information">无障碍信息 (WCAG)</a>有关的网页内容属性的机制。<span class="level">（<strong>A级</strong>：满足WCAG2.0 A级成功标准；<strong>AA级</strong>：满足WCAG2.0 A级和AA级成功标准；<strong>AAA级</strong>：满足WCAG2.0所有成功标准）。</span></p>
+
+ <ul class="sc-notes">
+   <li class="sc-note"><em class="note-handle">注:</em>有关机制的显著性，请查阅<a href="#sc_b414">成功标准 B.4.1.4</a></li></ul>
+	  	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b222">实施B.2.2.2</a></div>
+	  </div>
+	   
+	   
+
+ </div>
+<!-- sc-level -->
+
+</div><!-- sc-level -->
+<h3 class="guideline"><a id="gl_b23" name="gl_b23"></a>指南B.2.3：帮助开发者管理非文本内容的替代文本
+ 
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b23">实施B.2.3</a>]</span>
+</h3>
+		
+     <p class="rationale">由来：不恰当的<a href="#def-Alternative-Content" title="definition: alternative content" class="termdef">替代内容</a>可能会产生<a class="termdef" href="#def-Web-Content-Accessibility-Problem" title="definition: web content accessibility problem">网页内容无障碍访问性问题 (WCAG)</a>，且会干扰无障碍<a href="#def-Checking" title="definition: checking" class="termdef">检测</a>。<br />
+     <em>注：</em>这个指南仅适用于<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>指定的<a class="termdef" href="#def-Non-Text-Objects" title="definition: non-text content">非文本内容</a>（例如，插入一张图片）。当非文本内容是由<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a><span class="sc"><a href="#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">自动</a></span>生成的，详见<a href="#gl_b11">指南 B.1.1</a>。</p>
+	  
+     <div class="sc-level">
+
+       <h4 class="sc-title"><a id="sc_b231" name="sc_b231"></a>B.2.3.1：替代文本是可编辑的
+</h4>
+       <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供增加非文本内容的功能，则<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>能够修改<a href="#def-Associated-Alternative-Content" title="definition: alternative content" class="termdef">程序相关的</a><a class="termdef" href="#def-Text-Alternatives" title="text alternatives for non-text content">非文本内容的替代文本</a>。<span class="level">（<strong>A级</strong>：满足WCAG2.0 A级成功标准；<strong>AA级</strong>：满足WCAG2.0 A级和AA级成功标准；<strong>AAA级</strong>：满足WCAG2.0所有成功标准）。</span></p>
+		       <ul class="sc-notes">
+         <li class="sc-note"><em class="note-handle">注:</em>当非文本内容是装饰性的，格式性的，不可见的或是验证码时，例外。</li>
+       </ul>
+	  	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b231">实施B.2.3.1</a></div>
+	  </div>
+	   
+	   		
+		
+       </div>
+
+<div class="sc-level">
+       <h4 class="sc-title"><a id="sc_b232" name="sc_b232"></a>B.2.3.2：可替代文本的自动修复</h4>
+       <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>不会尝试<a href="#def-Repairing" title="definition: repairing" class="termdef">修复</a><a class="termdef" href="#def-Text-Alternatives" title="text alternatives for non-text content">非文本内容的替代文本</a>，或以下所有都成立<span class="level">（<strong>A级</strong>）</span></p>
+    <ul class="sc-bullets">
+      <li class="sc-bullet"><strong class="handle">(a)没有通用字符串或无关字符串：</strong>通用字符串（例如，&quot;图片&quot;）和无关字符串（例如，文件名，文件格式）不作为替代文本；</li>
+         <li class="sc-bullet"><strong class="handle">(b)开发期的修复：</strong>如果修复发生在开发期，<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>有机会在将替代文本插入内容前，接受、修改、或者拒绝修复尝试；</li>
+         <li class="sc-bullet"><strong class="handle">(c)开发期后的修复：</strong>如果修复发生在<span class="sc-title"><a href="#def-End-Auth-Session" title="definition: end of an authoring session" class="termdef">开发期结束点</a>后</span>，替代文本的修复被标识在后续的开发期（如果有）中，开发者有机会在插入到内容之前，接受、修改或者拒绝修复尝试。</li>
+   </ul>
+	  	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b232">实施B.2.3.2</a></div>
+	  </div>
+	   
+	   		  
+         
+ </div><!--sc-level -->
+		        
+<div class="sc-level">
+ <h4 class="sc-title"><a id="sc_b233" name="sc_b233"></a>B.2.3.3：保存以供重用
+</h4>
+ <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供增加非替代文本内容的功能，当<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>为非文本内容添加<a href="#def-Associated-Alternative-Content" title="definition: alternative content" class="termdef">程序相关的</a><a class="termdef" href="#def-Text-Alternatives" title="text alternatives for non-text content">非文本内容的替代文本</a>，则以下两条均成立<span class="level">（<strong>AAA级</strong>）</span></p>
+ <ul class="sc-bullets">
+   <li class="sc-bullet"><strong class="handle">(a)保存和建议：</strong>如果相同的非文本内容被重用，其替代文本被<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>自动保存和建议。</li>
+   <li class="sc-bullet"><strong class="handle">(b)编辑选项：</strong>开发者有编辑和删除已保存的替代文本的<a class="termdef" title="definition: options" href="#def-Option">选项</a>。</li></ul>
+		  	  <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b233">实施B.2.3.3</a></div>
+	  </div>
+	   
+	    
+         
+ </div><!-- sc-level -->
+	  
+   <h3 class="guideline"><a id="gl_b24" name="gl_b24"></a>指南B.2.4：使用无障碍模板帮助开发者
+
+
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b24">实施B.2.4</a>]</span>
+</h3>
+		
+     <p class="rationale">由来：提供<a href="#def-Accessible-Template" title="definition: accessible templates" class="termdef">无障碍模板(WCAG)</a>有如下优势，包括：直接改善<span class="sc">正在编辑中的</span><a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible web content">网页内容无障碍性 (WCAG)</a>，减少<a class="termdef" href="#def-Author" title="definition: author">开发者</a>的付出，和证明网页内容无障碍的重要性（WCAG）。</p>
+
+     <div class="sc-level">
+       <h4 class="sc-title"><a id="sc_b241" name="sc_b241"></a>B.2.4.1：无障碍模板选项（WCAG）
+</h4>
+       <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供<a href="#def-Template" title="definition: template" class="termdef">模板</a>，则一个a<a class="termdef" title="definition: range" href="#def-Range">区间</a>的模板都应该有<a href="#def-Accessible-Template" title="definition: accessible templates" class="termdef">无障碍模板 (WCAG)</a>的<a class="termdef" title="definition: options" href="#def-Option">选项</a>。<span class="level">（<strong>A级</strong>：满足WCAG2.0 A级成功标准；<strong>AA级</strong>：满足WCAG2.0 A级和AA级成功标准；<strong>AAA级</strong>：满足WCAG2.0所有成功标准）。</span></p>
+       <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b241">实施B.2.4.1</a></div>
+	  </div>
+	   
+
+         
+   </div><!-- sc-level -->
+	
+   <div class="sc-level">
+     <h4 class="sc-title"><a id="sc_b242" name="sc_b242"></a>B.2.4.2：识别模板的无障碍性
+</h4>
+     <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>包括一个<a href="#def-Template-Selection-Mechanism" title="definition: template selection mechanism" class="termdef">模板选择机制</a>且提供了一些非<a href="#def-Accessible-Template" title="definition: accessible templates" class="termdef">无障碍模板 (WCAG)</a>的<a class="termdef" title="definition: options" href="#def-Option">选项</a>，模板选择机制可以显示无障碍和非无障碍选项的区别。<span class="level">（<strong>AA级</strong>）</span></p>
+	 <ul class="sc-notes">
+       <li class="sc-note"><em class="note-handle">注:</em>这种区别包括为无障碍模板（WCAG）、非无障碍模板或两者的区别信息。</li>
+     </ul>
+	 <div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b242">实施B.2.4.2</a></div>
+     </div>
+	   		  
+
+        
+		
+       <h4 class="sc-title"><a id="sc_b243" name="sc_b243"></a>B.2.4.3：开发者创作的模板
+</h4>
+       <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>包括一个<a href="#def-Template-Selection-Mechanism" title="definition: template selection mechanism" class="termdef">模板选择机制</a>且允许<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>生成新的非<a href="#def-Accessible-Template" title="definition: accessible templates" class="termdef">无障碍模板(WCAG)</a>，则开发者可以使用模板选择机制显示他们生成的无障碍和非无障碍模板的区别。
+<span class="level">（<strong>AA级</strong>）</span></p>
+				<ul class="sc-notes">
+                 <li class="sc-note"><em class="note-handle">注:</em>这种区别包括为无障碍模板（WCAG）、非无障碍模板或两者的区别信息。</li>
+	 </ul>
+				<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b243">实施B.2.4.3</a></div>
+	  </div>
+	   
+
+         
+	  
+   </div>
+   <!-- sc-level -->
+ 
+<div class="sc-level">
+ <h4 class="sc-title"><a id="sc_b244" name="sc_b244"></a>B.2.4.4：无障碍模板选项（增强版）</h4>
+ <p class="sc-title">若某<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供<a href="#def-Template" title="definition: template" class="termdef">模板</a>，则所有的模板都是<a href="#def-Accessible-Template" title="definition: accessible templates" class="termdef">无障碍模板 (满足WCAG级别AA)</a><span class="level">（<strong>AAA级</strong>）</span></p>
+  		<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b244">实施B.2.4.4</a></div>
+   </div>
+	   
+
+        <!-- techs-only -->
+
+</div><!-- sc-level -->
+ 
+ <h3 class="guideline"><a id="gl_b25" name="gl_b25"></a>指南B.2.5：使用无障碍的预开发内容帮助开发者
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b25">实施B.2.5</a>]</span></h3>
+   <p class="rationale">由来：提供<a href="#def-Accessible-Preauthored-Content" title="definition: accessible pre-authored content" class="termdef">可访问的预开发内容(WCAG)</a>（例如，剪贴画，同步媒体，应用程序）有如下一些优势：直接改善正在编辑中的无障碍内容，减少<a class="termdef" href="#def-Author" title="definition: author">开发者</a>的付出，和证明网页内容无障碍的重要性（WCAG）。</p>
+   <div class="sc-level">
+     <h4 class="sc-title"><a id="sc_b251" name="sc_b251"></a>B.2.5.1：无障碍的预开发内容选项（WCAG）
+</h4>
+     <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供<a href="#def-Preauthored-Content" title="definition: pre-authored content" class="termdef">预开发内容</a>，则一个区间的模板都应该有<span class="rationale"><a href="#def-Accessible-Preauthored-Content" title="definition: accessible pre-authored content" class="termdef">可访问的预开发内容(满足WCAG级别AA)</a>的</span><a class="termdef" title="definition: options" href="#def-Option">选项</a>。<span class="level">（<strong>AA级</strong>）</span></p>
+     <div class="gl-only">
+       <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b251">实施B.2.5.1</a></div>
+     </div>
+      
+      
+
+
+     <h4 class="sc-title"><a id="sc_b252" name="sc_b252"></a>B.2.5.2：识别预开发内容的无障碍性
+</h4>
+     <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>包括一个<a href="#def-Preauthored-Content-Selection-Mechanism" title="definition: pre-authored content selection mechanism" class="termdef">预开发内容 选择机制</a>，并且同时提供任何非<a href="#def-Accessible-Preauthored-Content" title="definition: accessible pre-authored content" class="termdef">无障碍的预开发内容(WCAG等级AA)</a><a class="termdef" title="definition: options" href="#def-Option">选项</a>，则选择机制可以显示无障碍和非无障碍选项的区别。<span class="level">（<strong>AA级</strong>）</span></p>
+     <ul class="sc-notes">
+       <li class="sc-note"><em class="note-handle">注:</em>这种区别包括为无障碍预开发内容（WCAG）、非无障碍预开发内容或两者的区别信息。</li>
+     </ul>
+     <div class="gl-only">
+       <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b252">实施B.2.5.2</a></div>
+     </div>
+      
+      
+      
+ </div><!-- sc-level -->
+	
+ <h2 class="principle"><a id="principle_b3" name="principle_b3"></a>规则B.3: 支持开发者改进现有内容的无障碍访问性
+</h2>
+
+   <h3 class="guideline"><a id="gl_b31" name="gl_b31"></a>指南B.3.1：帮助开发者检查无障碍问题
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b31">实施B.3.1</a>]</span></h3>
+   <p class="rationale">由来：<a href="#def-Checking" title="definition: checking" class="termdef">无障碍检测</a>是<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>的一个集成功能时，它可以帮助<a class="termdef" href="#def-Author" title="definition: author">开发者</a>在开发期意识到<a href="#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">网页内容无障碍访问性问题 (WCAG)</a>，这样开发者就可以立即处理。</p>
+	
+<div class="sc-level">
+ <h4 class="sc-title"><a id="sc_b311" name="sc_b311"></a>B.3.1.1：检查帮助（WCAG）
+</h4>
+ <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供给<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>添加或修改<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>的能力，这可能产生一个与<a href="#conf-rel-wcag">WCAG 2.0</a>成功标准相违背的方法，则提供对该成功标准的无障碍<a href="#def-Checking" title="definition: checking" class="termdef">检测</a>（例如，一个HTML编辑工具应在插入图片时检查其替代文本；一个具有编辑文本轨道功能的<a href="#def-Video" title="definition: video" class="termdef">视频</a>开发工具应检查字幕）。<span class="level">（<strong>A级</strong>：满足WCAG2.0 A级成功标准；<strong>AA级</strong>：满足WCAG2.0 A级和AA级成功标准；<strong>AAA级</strong>：满足WCAG2.0所有成功标准）。</span></p>
+
+  <ul class="sc-notes">
+   <li class="sc-note"><em class="note-handle">注:</em><a class="termdef" href="#def-Automated-Checking" title="definition: automated checking">自动检测</a>和<a class="termdef" href="#def-Semi-Automated-Checking" title="definition: semi-automated checking">半自动监测</a>对于许多类型的<a href="#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">网页内容无障碍访问性问题 (WCAG)</a>都是可能的（且被鼓励的）。尽管如此，<a href="#def-Manual-Checking" title="definition: manual checking" class="termdef">人工检测</a>是满足该成功标准的最低要求。在人工检测中，开发工具提供给<a class="termdef" href="#def-Author" title="definition: author">开发者</a>发现问题的说明，检测的执行是开发者自己完成的。更多关于检测的信息，详见<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#checking-types">Implementing ATAG 2.0 - 附录B: 检测自动化级别。</a></li></ul>
+
+		<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b311">实施B.3.1.1</a></div>
+	  </div>
+	     
+	  <!-- techs-only -->
+ </div><!-- sc-level -->
+  
+ <div class="sc-level">
+  
+ <h4 class="sc-title"><a id="sc_b312" name="sc_b312"></a>B.3.1.2：帮助开发者决策
+</h4>
+ <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供<a href="#def-Checking" title="definition: checking" class="termdef">无障碍检测</a>，且该检测依赖于<a class="termdef" href="#def-Author" title="definition: authors">开发者</a>判定潜在的网页无障碍访问性问题（WCAG）是否被正确标识（例如，<a href="#def-Manual-Checking" title="definition: manual checking" class="termdef">人工检测</a>和<a href="#def-Semi-Automated-Checking" title="definition: semi-automated checking" class="termdef">半自动检测</a>），则无障碍检测过程提供如何判定的描述。<span class="level">（<strong>A级</strong>）</span></p>
+
+		<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b312">实施B.3.1.2</a></div>
+	  </div>
+	     
+  
+ <h4 class="sc-title"><a id="sc_b313" name="sc_b313"></a>B.3.1.3：帮助开发者定位问题
+</h4>
+ <p class="sc-title">如果<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供了<a href="#def-Checking" title="definition: checking" class="termdef">检测</a>，且该检测依赖于<a class="termdef" href="#def-Author" title="definition: author">开发者</a>判定潜在的<a href="#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">网页内容无障碍访问性问题 (WCAG)</a>是否被正确标识（例如，<a href="#def-Manual-Checking" title="definition: manual checking" class="termdef">人工检测</a>和<a href="#def-Semi-Automated-Checking" title="definition: semi-automated checking" class="termdef">半自动检测</a>），则相关内容被标识给开发者。<span class="level">（<strong>A级</strong>）</span></p>
+
+  <ul class="sc-notes">
+<li class="sc-note"><em class="note-handle">注:</em>根据<a class="termdef" href="#def-Editing-View" title="definition: editing view">编辑视图</a>的性质和潜在的网页无障碍访问性问题（WCAG）范围，标识需要包括高亮元素或元素渲染，显示行数，或者提供说明。</li></ul>
+
+		<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b313">实施B.3.1.3</a></div>
+	  </div>
+	     
+  
+</div>
+<!-- sc-level -->
+<div class="sc-level">
+ <h4 class="sc-title"><a id="sc_b314" name="sc_b314"></a>B.3.1.4：状态报告
+</h4>
+ <p class="sc-title">若<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供了<a href="#def-Checking" title="definition: checking" class="termdef">检测</a>则<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>可以收到基于无障碍检测结果的无障碍状态报告。<span class="level">（<strong>AA级</strong>）</span></p>
+  <ul class="sc-notes">
+<li class="sc-note"><em class="note-handle">注:</em>无障碍状态报告没有特定的格式，可能包括已发现<a href="#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">问题</a>的列表或一个<a href="#conf-rel-wcag">WCAG 2.0</a>一致性级别等等。</li></ul>
+
+		<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b314">实施B.3.1.4</a></div>
+	  </div>
+	     
+  
+ <h4 class="sc-title"><a id="sc_b315" name="sc_b315"></a>B.3.1.5：通过编程关联结果
+</h4>
+ <p class="sc-title">若某个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供了<a href="#def-Checking" title="definition: checking" class="termdef">检测</a>，则<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>可以将无障碍<a href="#def-Checking" title="definition: checking" class="termdef">检测</a>结果与已检测的<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>通过<a href="#def-Associated-Alternative-Content" title="definition: alternative content" class="termdef">程序关联</a>。<span class="level">（<strong>AA级</strong>）</span></p>
+  <div class="gl-only">
+     <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b315">实施B.3.1.5</a></div>
+   </div>
+	     
+  
+</div>
+<!-- sc-level -->
+<h3 class="guideline"><a id="gl_b32" name="gl_b32"></a>指南B.3.2：帮助开发者修复无障碍问题
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b32">实施B.2.3</a>]</span></h3>
+
+<p class="rationale">由来：当<a href="#def-Repairing" title="definition: repairing" class="termdef">修复</a>是开发过程的一个组成部分时，这很大程度增加了无障碍<a href="#def-Checking" title="definition: checking" class="termdef">检测</a>的作用，增加了<a href="#def-Web-Content-Accessibility-Problem" title="definition: web content accessibility problems" class="termdef">网页内容无障碍访问性问题 (WCAG)</a>被处理的可能性。</p>
+
+<div class="sc-level">
+ <h4 class="sc-title"><a id="sc_b321" name="sc_b321"></a>B.3.2.1： 修复帮助（WCAG）
+</h4>
+ <p class="sc-title">若某<a href="#def-Checking" title="definition: checking" class="termdef">检测</a>（详见<a href="#sc_b311">成功标准 B.3.1.1</a>）可以发现一个没有被满足的<a href="#conf-rel-wcag">WCAG 2.0</a>成功标准，则提供<a href="#def-Repairing" title="definition: repairing" class="termdef">修复</a>提示。<span class="level">（<strong>A级</strong>：满足WCAG2.0 A级成功标准；<strong>AA级</strong>：满足WCAG2.0 A级和AA级成功标准；<strong>AAA级</strong>：满足WCAG2.0所有成功标准）。</span></p>
+  <ul class="sc-notes">
+   <li class="sc-note"><em class="note-handle">注:</em><a class="termdef" href="#def-Automated-Repairing" title="definition: automated checking">自动</a><a class="termdef" href="#def-Automated-Checking" title="definition: automated checking">和</a><a class="termdef" href="#def-Semi-Automated-Repairing" title="definition: semi-automated checking">半自动修复</a>可以（并鼓励）在<a href="#def-Web-Content-Accessibility-Problem" title="definition: web content accessibility problems" class="termdef">网页内容无障碍访问性问题 (WCAG)</a>中使用。 然而，<a href="#def-Manual-Repairing" title="definition: manual repairing" class="termdef">人工修复</a>依然是满足成功标准的最低要求。在人工修复中，<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>向<a class="termdef" href="#def-Author" title="definition: author">开发者</a>提供修复指导。详情请参阅<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#repair-types">Implementing ATAG 2.0 - 附录C: 自动化修复的等级</a></li></ul>
+
+		<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b321">实施B.3.2.1</a></div>
+	  </div>
+	     
+  
+</div>
+<!-- sc-level -->
+<h2 class="principle"><a id="principle_b4" name="principle_b4"></a>规则B.4 开发工具无障碍特性的提升和整合
+</h2>
+      
+<h3 class="guideline"><a id="gl_b41" name="gl_b41"></a>指南B.4.1：确保支持无障碍内容生成的特征的无障碍访问性
+
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b41">实施B.4.1</a>]</span>
+</h3>
+		
+     <p class="rationale">由来：如果在<a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">开发工具界面</a>中打开<a class="termdef" href="#def-Accessible-Content-Support-Features" title="definition: accessible content support features">无障碍内容支持特性</a>并设置合理的<a class="termdef" href="#def-Prominence" title="definition: prominence">显著</a>显示，无障碍内容支持特性更可能被使用。</p>
+
+	  
+     <div class="sc-level">
+       <h4 class="sc-title"><a id="sc_b411" name="sc_b411"></a>B.4.1.1：默认生效的特性（WCAG）
+</h4><p class="sc-title">所有的<a title="definition: accessible content support features" class="termdef" href="#def-Accessible-Content-Support-Features">无障碍内容支持特性</a>被默认打开。<span class="level">（<strong>A级</strong>）</span></p>
+
+		<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b411">实施B.4.1.1</a></div>
+	  </div>
+	     
+
+        
+		
+       <h4 class="sc-title"><a id="sc_b412" name="sc_b412"></a>B.4.1.2：重新激活特性的选项
+</h4>
+       <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>不包括关闭<a title="definition: accessible content support features" class="termdef" href="#def-Accessible-Content-Support-Features">无障碍内容支持特性</a>的<span class="sc-bullet"><a href="#def-Option" title="definition: option" class="termdef">选项</a></span>，或者该选项支持关闭后重新开启。<span class="level">（<strong>A级</strong>）</span></p>
+		<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b412">实施B.4.1.2</a></div>
+	  </div>
+	     
+	   
+        
+	</div><!-- sc-level -->
+		
+<div class="sc-level">
+
+ <h4 class="sc-title"><a id="sc_b413" name="sc_b413"></a>B.4.1.3：特性停用警告
+</h4>
+ <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>不包括关闭<a title="definition: accessible content support features" class="termdef" href="#def-Accessible-Content-Support-Features">无障碍内容支持特性</a>的<span class="sc-bullet"><a href="#def-Option" title="definition: option" class="termdef">选项</a></span>，或者如果这些选项被关闭，<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>会被告知这会增加<a title="definition: web content accessibility problem" class="termdef" href="#def-Web-Content-Accessibility-Problem">内容无障碍访问性问题(WCAG)</a>的风险。<span class="level">（<strong>AA级</strong>）</span></p>	
+ <div class="gl-only">
+     <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b413">实施B.4.1.3</a></div>
+   </div>
+	     
+
+        
+		
+       <h4 class="sc-title"><a id="sc_b414" name="sc_b414"></a>B.4.1.4：突出特性
+</h4>
+       <p class="sc-title">所有<a class="termdef" href="#def-Accessible-Content-Support-Features" title="definition: accessible content support features">无障碍内容支持特性</a>至少与其他有关无效<a href="#def-Markup" title="definition: markup" class="termdef">标签</a>、语义错误、拼写错误或者语法错误一样<a class="termdef" href="#def-At-Least-As-Prominent" title="definition: At Least As Prominent">显著</a>。<span class="level">（<strong>AA级</strong>）</span></p>
+		<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b414">实施B.4.1.4</a></div>
+	  </div>
+	     
+	   
+        
+ </div><!-- sc-level -->
+   <h3 class="guideline"><a id="gl_b42" name="gl_b42"></a>指南B.4.2：确保文档促进无障碍内容的生成
+
+<span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_b42">实施B.4.2</a>]</span>
+</h3>
+		
+     <p class="rationale">由来：在判定如何使用<a class="termdef" href="#def-Accessible-Content-Support-Features" title="definition: accessible content support features">无障碍内容支持特性</a>（例如，如何回应<span class="sc-bullet"><a class="termdef" href="#def-Text-Alternatives" title="text alternatives for non-text content">替代文本</a></span>的<a href="#def-Prompt" title="definition: prompt" class="termdef">提示</a>，如何使用无障碍<a href="#def-Checking" title="definition: checking" class="termdef">检测</a>工具），一些<a class="termdef" href="#def-Author" title="definition: author">开发者</a>需要得到支持。将无障碍开发演示作为常规实践，或者至少不演示非无障碍开发实践，将会帮助开发者接受无障碍特性。</p>
+
+   <div class="sc-level">
+     <h4 class="sc-title"><a id="sc_b421" name="sc_b421"></a>B.4.2.1：模型实践（WCAG）
+</h4>
+     <p class="sc-title">在<a class="termdef" href="#def-Documentation" title="definition: documentation">用户手册/开发文档</a>中包括一个<a class="termdef" title="definition: range" href="#def-Range">区间</a>的样例（例，<a href="#def-Markup" title="definition: markup" class="termdef">标签</a>，屏幕截图，<a class="termdef" href="#def-WYSIWYG" title="definition: WYSIWYG">所见即所得</a>的<a href="#def-Editing-View" title="definition: editing views" class="termdef">编辑视图</a>），演示<a class="termdef" href="#def-Acc-Auth-Practice" title="definition: accessible authoring practices">无障碍开发实践(WCAG)</a>。<span class="level">（<strong>A级</strong>：满足WCAG2.0 A级成功标准；<strong>AA级</strong>：满足WCAG2.0 A级和AA级成功标准；<strong>AAA级</strong>：满足WCAG2.0所有成功标准）。</span></p>
+
+		<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b421">实施B.4.2.1</a></div>
+</div>
+	     
+
+         
+</div><!-- sc-level -->
+
+	  
+     <div class="sc-level">
+       <h4 class="sc-title"><a id="sc_b422" name="sc_b422"></a>B.4.2.2：特征说明
+</h4>
+       <p class="sc-title">任何<a class="termdef" href="#def-Accessible-Content-Support-Features" title="definition: accessible content su<a class="termdef" href="#def-Documentation" title="definition: documentation">用户手册/开发文档</a>中。<span class="level">（<strong>A级</strong>）</span></p>
+		<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b422">实施B.4.2.2</a></div>
+	  </div>
+	     
+
+	    
+</div><!-- sc-level -->
+ 
+<div class="sc-level">
+ <h4 class="sc-title"><a id="sc_b423" name="sc_b423"></a>B.4.2.3：教程
+</h4>
+ <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>提供针对该工具特定的无障碍开发过程的<a href="#def-Tutorial" title="definition: tutorial" class="termdef">教程</a>。<span class="level">（<strong>AAA级</strong>）</span></p>
+		<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b423">实施B.4.2.3</a></div>
+</div>
+	     
+	            
+
+     <h4 class="sc-title"><a id="sc_b424" name="sc_b424"></a>B.4.2.4：说明索引
+</h4>
+     <p class="sc-title"><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a><a class="termdef" href="#def-Documentation" title="definition: documentation">用户手册/开发文档</a>包含使用<a class="termdef" href="#def-Accessible-Content-Support-Features" title="definition: accessible content support features">无障碍内容支持特性</a>的说明索引。<span class="level">（<strong>AAA级</strong>）</span></p>
+	  		<div class="gl-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_b424">实施B.4.2.4</a></div>
+	  </div>
+	     
+
+     <!-- techs-only -->
+ </div>
+</div><!-- sect-guidelines -->
+
+<hr />
+ 
+
+<div id="sect-conformance">
+ <h2><a id="Conformance" name="Conformance"></a>一致性
+</h2>
+ <div class="gl-only">
+ <p>本部分是<a class="termdef" href="#def-Normative" title="definition: normative">规范化的</a></p>
+ </div> 
+
+   <!-- techs-only -->
+
+ <p>一致性意味着<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>满足<a href="#guidelines">指南</a>部分中定义的<a href="#conf-applic">适用</a>成功标准。 此一致性部分描述一致性并列出一致性要求。</p>
+<h3><a name="conf-req" id="conf-req"></a>一致性要求
+</h3>
+<h4><a name="conf-sc-satisfaction" id="conf-sc-satisfaction"></a>成功标准满意度
+</h4>
+ <p>确定ATAG 2.0一致性的第一步是评定是否满足成功标准。可选的答案有：
+</p>
+ <ul>
+   <li><strong><a name="conf-applic" id="conf-applic"></a>不适用：</strong>ATAG 2.0包含了<a href="#def-Authoring-Tool">对开发工具的定义</a>，例如，它涵盖了广泛的功能和上下文的软件操作。为了考虑有限的创作工具的特性集（例如：照片编辑器，CSS编辑器，社交网络应用程序状态更新领域），很多ATAG 2.0成功标准是有条件的，只适用于给特性的创作工具。一个一致性申明被制定后，<strong>需要</strong>解释为什么这个成功标准是不适用的。</li>
+   <li><strong>满足：</strong>在一些成功标准中，会包含一个参考WCAG 2.0的<a href="#conf-levels">等级</a>（A，AA，或AAA）。当一个<a href="#conf-claim">一致性声明</a>被制定后，<strong>可选</strong>并强烈建议列明其解释。</li>
+   <li><strong>不满足：</strong>不满足：当一个一致性申明被制定后，<strong>可选</strong>并强烈建议列明其解释。
+</li>
+ </ul>
+ <h4><a id="conf-rel-wcag" name="conf-rel-wcag"></a>与网页内容无障碍指南（WCAG） 2.0的关系
+</h4>
+ <p>在发布的时候，WCAG 2.0[<cite>[<a href="#ref-WCAG20">WCAG20</a>]</cite>]是现在的W3C中的“有关网页内容的可访问性建议”部分。因为，当对以下内容进行设置时，ATAG 2.0将参照WCAG 2.0进行：
+（1）<a class="termdef" href="#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)">基于web的开发工具用户界面</a>的可访问性（在<a href="#part_a">A部分</a>中）。
+（2）针对生产网络内容应该如何让<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>被启用，被支持和被引导，这是对残疾人<a href="#def-End-Users" title="definition: end user" class="termdef">终端用户</a>的可访问性（在<a href="#part_b">B部分</a>中）。</p>
+ <p>特别地，在&quot;<a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible web content">可访问性内容</a>&quot;（及其相关术语，如&quot;<a href="#def-Accessible-Template" title="definition: accessible templates" class="termdef">无障碍模板</a>&quot;）一词的定义中，ATAG 2.0将参考WCAG 2.0 进行。“可访问性内容”的定义是符合WCAG 2.0标准的内容，当一个网页内容技术满足WCAG2.0时，无论满足等级是A，AA，还是AAA，都将得到可访问性支持。&quot;无论满足等级是A，AA，还是AAA&quot;是因为“可访问性内容”可以根据不同的上下文中使用（例如，在等级A的ATAG 2.0成功标准与等级AAA成功标准）。这个定义还包括两点：</p>
+ <ul>
+   <li>第一点：&quot;缺乏基于技术的可访问性支持的内容，将不符合WCAG 2.0标准，且会造成一个或多个有残疾的终端用户团体具有内容访问障碍。&quot;</li>
+   <li>第二点：与WCAG 2.0一致，即使处在最高等级（例如等级AAA），仍然有可能没有将内容做成”在所有类型、程度或任何残疾的组合”中，具有对用户的可访问性。为了强调ATAG2.0的成功标准或定义条款，这些关系会在括号内进行如下标注： &quot;(WCAG)&quot;</li>
+ </ul>
+ <h5><a id="conf-note" name="conf-note"></a>有关&quot;使用技术的可访问性支持方式&quot;的注意事项：</h5>
+ <p>部分WCAG 2.0一致性要求&quot;只有使用技术的可访问性支持方式是满足WCAG2.0成功标准的。以非可访问性支持方式提供的任何信息或功能也能够以实用技术的<em>可访问性支持方式来提供</em>。&quot;从广义上讲，当使用<a href="#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">网页内容技术</a>支持用户的<a class="termdef" href="#def-Assistive-Technology" title="definition: assistive technology">辅助技术</a>的方式和网页内容技术的可访问性支持<a class="termdef" href="#def-User-Agent" title="definition: user agent">用户代理</a>提供给终端用户时，WCAG 2.0认为网页内容的技术是“支持可访问性”的。</p>
+ <p>这个概念不容易扩展到<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>，因为许多创作工具可以通过不同的辅助技术和用户代理的可访问性在不同的环境中安装和使用（例如，私人企业内部网和公共网站，单语网站和多语言网站）。因此：</p>
+ <blockquote>
+   <p><strong>ATAG 2.0不包括可访问性支持的要求。因此，ATAG 2.0成功标准并不指WCAG 2.0中的&quot;一致性&quot;，而是指&quot;满足WCAG 2.0成功标准&quot;。</strong></p>
+ </blockquote>
+ <p>一旦一个创作工具已经安装并投入使用，将很有可能对其产生的<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>进行WCAG 2.0一致性评估，包括是否满足WCAG 2.0可访问性需求。但是，这WCAG 2.0一致性评估将与此创作工具ATAG 2.0一致性评估完全独立。</p>
+ <h4><a name="conf-levels" id="conf-levels"></a>一致性选择和等级
+</h4>
+ <p>有两种一致性类型，每一类有三个等级：</p>
+ <h5><a name="conf-atag-conf" id="conf-atag-conf"></a>ATAG 2.0一致性（等级A，AA，或AAA）
+</h5>
+ <p>当一个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a><em>可</em>用于生产<a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible web content">无障碍网页内容（WCAG）</a>且没有额外的工具或组件时，将作出一致性选择。这些等级的一致性决定如下：</p>
+ <ul>
+   <li><strong>等级A：</strong>创作工具满足所有<a href="#conf-applic">适用</a>的等级A的成功标准。</li>
+   <li><strong>等级AA：</strong>创作工具满足所有适用的等级A和等级AA的成功标准。</li>
+   <li><strong>等级AAA：</strong>创作工具满足所有适用的成功标准。</li>
+ </ul>
+ <p><em>注1:</em><a href="#part_a_applic_notes">A部分的一致性适用性注意</a>和<a href="#part_b_applic_notes">B部分的一致性适用性注意</a>都是适用的<br />
+   <em>注2:</em>如果最低一致性等级A（等级A）尚未实现（例如，至少有一种等级A适用的标准没有被满足），它仍可以在发布声明中指定成功标准得到满足的部分。</p>
+ <h5><a name="conf-partial-component" id="conf-partial-component"></a>部分ATAG 2.0一致性-流程组件（等级A，AA，或AAA）
+</h5>
+ <p>
+当需要额外的<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>或组件时，<em>可能</em>会做出一致性选择，来使整个完整的设计系统一致化。选择的适用范围从功能非常有限的组件（例如，一个插件）到几乎完整的系统（例如，只有缺乏可访问性检查功能的标记编辑器）。</p>
+ <p>一致性等级（A，AA，或AAA），除了答案为&quot;不满足&quot;的意外，都以如上方式确定，工具不能为了满足作为一个完整创作系统的一部分的另一个创作流程组件而阻止成功标准得到满足。</p>
+ <p><em>注1：</em>如果创作工具为了满足原来不满足的成功标准而妨碍到了其他的创作流程组件（例如，处于安全原因），创作工具将无法满足部分一致性。<br />
+   <em>注2：</em><a href="#part_a_applic_notes">A部分的一致性适用性注意</a>和<a href="#part_b_applic_notes">B部分的一致性适用性注意</a>都是适用的。</p>
+ <h5><a name="conf-partial-platform-limits" id="conf-partial-platform-limits"></a>部分ATAG 2.0一致性–平台限制（等级A，AA，或AAA）
+</h5>
+ <p>可能当一个<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>由于平台固有的闲置原因而无法满足一个或多个<a class="termdef" href="#def-Platform" title="definition: platform">平台</a>的成功标准时，可以做出一致性选择（例如，缺乏一个<a class="termdef" href="#def-Accessibility-Platform-Service" title="definition: accessibility platform architecture">平台无障碍服务</a>）。一致性要求的结果解释（可选）应当解释哪些平台特性会丢失。</p>
+  
+ <h4><a name="conf-techs-produced" id="conf-techs-produced"></a>关于所生产的 Web 内容技术
+</h4>
+ <p><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>必须符合ATAG 2.0中关于生产特定的<a class="termdef" href="#def-Web-Content-Technology" title="definition: technology (Web content)">网页内容技术</a>方面的要求。例如，生产XHTML 1.0时需要符合等级A的要求。</p>
+
+ <p>如果某个创作工具可用于多种Web内容技术的生产，则一致性只需包这些技术的一个子集即可。该子集需囊括被<a class="termdef" href="#def-Developer" title="definition: authoring tool developers">开发者</a>设为用于<a href="#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">自动生成内容</a>、或默认用于<a class="termdef" href="#def-Content-Author-Gen" title="definition: author generated content">开发者生成内容</a>的任何技术。这个子集也可包含一些并非<a href="#def-Publishing" title="definition: publishing" class="termdef">发布</a>给<a href="#def-End-Users" title="definition: end user" class="termdef">终端用户</a>使用、而是作为&quot;中间&quot;格式使用的技术，尽管非必需。</p>
+ <h4><a name="conf-live-publishing" id="conf-live-publishing"></a>可实时发布的创作工具
+</h4>
+ <p>ATAG 2.0可以应用到带有具备实时创作 Web 内容功能的工作流（例如，一些协作工具）的创作工具上。由于实时发布中固有的挑战，ATAG 2.0的<a href="#part_b">B部分</a>中，这些创作工具的一致性可能涉及实时<span class="sc"><a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">开发期</a></span>之前（例如，在准备可访问幻灯片中的支持），期间（例如，现场字幕，因为 WCAG2.0要求在AA 级 ）和之后（例如，将抄本添加到最初实时发布的演示文稿的存档中的能力）不同阶段所需支持的组合。欲了解更多信息，请参阅<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#realtime-production">实现ATAG 2.0 -附录E：实时</a></p>
+
+ <h3><a name="conf-claim" id="conf-claim"></a>一致性声明（可选）
+</h3>
+ <p><em>注：</em>与任何软件应用程序一样，创作工具可以是组件的集合。一致性声明只能由负责部门制定。其他任何&quot;申明&quot;实际上都只是评论。</p>
+
+<h4><a name="conf-claim-req-components" id="conf-claim-req-components"></a>一致性声明的必要组件
+</h4>
+ <ol>
+   <li>申明的<strong>日期</strong>。</li>
+   <li><strong>ATAG 2.0</strong><strong>版本</strong>和<strong>URI</strong></li>
+   <li>所满足的<a href="#conf-levels"><strong>一致性等级</strong></a></li>
+   <li><strong>开发工具信息：</strong><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>的名称和足够用以指定版本（如供应商名称，版本号（或版本范围），需要的补丁或更新，<a class="termdef" href="#def-Human-Language" title="definition: human language">人类语言</a>的用户界面或<a class="termdef" href="#def-Documentation" title="definition: documentation">用户手册/开发文档</a>）的附加信息。
+     <ul>
+       <li><em>注：</em>如果开发工具是软件应用程序的集合（如<a href="#def-Markup" title="definition: markup" class="termdef">标签</a>编辑器，图像编辑器和验证工具），那么必须单独为每个应用程序提供信息，但一致性声明会把它们作为一个整体。</li>
+
+     </ul>
+   </li>
+   <li><strong>平台：</strong>开发工具操作的<a class="termdef" href="#def-Platform" title="definition: platform">平台</a>
+     <ul>
+       <li><a name="conf-user-agents" id="conf-user-agents"></a><strong><a href="#def-User-Agent" title="definition: user agent" class="termdef">用户代理</a>平台</strong>（用于评估<a class="termdef" href="#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)">基于web的开发工具用户界面</a>）：提供用户代理的名称和版本信息。</li>
+
+       <li><a name="conf-not-user-agents" id="conf-not-user-agents"></a><strong>非<a href="#def-User-Agent" title="definition: user agent" class="termdef">用户代理</a>的平台</strong>（用于评价<a class="termdef" href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)">非基于 Web 创作工具的用户界面</a>）：提供平台（例如，桌面操作系统，移动操作系统，跨操作系统环境）的名称和版本信息和所使用的<a href="#def-Accessibility-Platform-Service" title="definition: platform accessibility architectur" class="termdef">平台无障碍服务</a>的名称和版本。</li>
+     </ul>
+   </li>
+   <li><strong>包含在声明中的由创作工具<a href="#conf-techs-produced">生成<a>的<a class="termdef" href="#def-Web-Content-Technology" title="definition: technology (Web content)">网页内容技术</a></strong>的列表。如果创作工具生成的Web 内容技术未包含在一致性声明中，则必须单独列出。任何创作工具默认生成的 Web内容技术，都必须包括在内。</li>
+   <li><strong>每条成功标准的评判结果：</strong>是、否、<a href="#conf-applic">不适用。</a></li>
+
+ </ol>
+ <h4><a name="conf-claim-optional-components" id="conf-claim-optional-components"></a>一致性声明的可选组件
+</h4>
+ <p>除了上述一致性要求的必需组件，可考虑提供额外的信息，以协助作者。推荐的其他信息包括：</p>
+ <ol>
+   <li><a name="conf-explanation-results" id="conf-explanation-results"></a><strong>成功标准结果的解释</strong>（是，否）。（强烈推荐）</li>
+   <li>关于所产生的 Web 内容技术如何被用来创建<a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible Web content">可访问的网页内容</a>（例如链接到特定技术的 WCAG 2.0 技术）的信息。 (e.g. links to technology-specific WCAG 2.0 techniques)</li>
+   <li>描述在成功标准的基础之上，任何能提高可访问性的额外举措。</li>
+   <li>机器可读的元数据版本的一致性声明。</li>
+   <li>关于如何辨识创作工具中编辑视图的种类的描述信息。</li>
+ </ol>
+ <h3><a name="conf-disclaimer" id="conf-disclaimer"></a>免责声明
+</h3>
+ <p>W3C，WAI 或 AUWG 不对任何未在 W3C，WAI 或 AUWG 的授权下发布的 ATAG 2.0<a href="#conf-claim">一致性声明</a>的任何方面或结果承担任何责任。</p>
+
+</div>  
+<!-- sect-conformance -->
+<hr />
+  
+<!-- techs-only -->
+<!-- techs-only -->
+<!-- techs-only -->
+ 
+ 
+<!-- techs-only -->
+<!-- techs-only -->
+ 
+<div id="sect-definitions">
+ <h2><a id="glossary" name="glossary"></a>附录<span class="gl-only">A</span>：词汇表</h2>
+ <div class="gl-only">
+ <p>本部分是<a class="termdef" href="#def-Normative" title="definition: normative">规范性的</a>。</p>
+ <p>该附录包括本标准规范中所使用的有显著/重要/生僻的术语的定义，也包括在<a href="#Conformance">一致性</a>部分中使用的术语。 有关定义在标准质量中的作用的更多信息，请参阅<a href="http://www.w3.org/TR/qaframe-spec/">http://www.w3.org/TR/qaframe-spec/</a></p>
+
+ </div>
+  <!-- techs-only -->
+
+ <dl>
+   <dt><dfn><a id="def-Accessibility-Problem" name="def-Accessibility-Problem"></a>无障碍访问性问题（accessibility problems）</dfn></dt>
+   <dd>ATAG 2.0 将以下两种问题视为无障碍访问性问题:
+	 <ul>
+	   <li><dfn><a id="def-Authoring-Interface-Accessibility-Problem" name="def-Authoring-Interface-Accessibility-Problem"></a>开发工具界面的无障碍访问性问题：</dfn>
+   <a class="termdef" href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface">开发工具用户界面</a>的某些内容或方面无法满足ATAG2.0<a href="#part_a">A部分</a>的要求；</li>
+
+	<li><a id="def-Web-Content-Accessibility-Problem" name="def-Web-Content-Accessibility-Problem"></a><dfn>网页内容无障碍访问性问题 (WCAG):</dfn>
+   <a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>的某些方面无法满足<a href="#conf-rel-wcag">WCAG 2.0</a>B部分的要求（即未达到AAA级、AA级或A级标准）</li>
+	 </ul></dd>
+	   
+	<dt><a id="def-Accessibility-Information" name="def-Accessibility-Information"><dfn>无障碍访问性信息（WCAG）（accessibility information）</dfn></a></dt>
+   <dd>指网页为了满足<a href="#conf-rel-wcag">WCAG 2.0</a>的要求（即未达到AAA级、AA级或A级标准）所必须包含的<a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>。具体例子包括：<a href="#def-Associated-Alternative-Content" title="definition: alternative content" class="termdef">程序相关的替代内容</a>（如图片的替代文本）、<a href="#def-Role" title="definition: role" class="termdef">角色</a>、工具的状态信息、复杂表格之间的<a href="#def-Relationships" title="definition: relationships" class="termdef">关系</a>等。<br />
+<em>注：</em>为了达到ATAG2.0的目的，只有<a class="termdef" href="#def-Programmatically-Determined" title="definition: programmatically determined">程序可决定的</a>无障碍访问性信息才符合定义。附加例子详见<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#prompting-types">ATAG2.0实现文档 的附录A</a>。</dd>
+   <dt><a id="def-Accessible-Content-Support-Features" name="def-Accessible-Content-Support-Features"><dfn>无障碍内容支持特性（accessible content support features）</dfn></a></dt>
+
+   <dd>指<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>当中，所有直接帮助<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>提升编辑中网页内容的无障碍访问性的开发工具特性。这些特性是满足ATAG2.0<a href="#part_b">B部分</a>的要求所必需的。</dd>
+    
+
+	<dt><a id="def-Alternative-Content" name="def-Alternative-Content"></a><dfn>替代内容（alternative content）</dfn></dt>
+   <dd>有些<a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>无法被所用用户访问，替代内容指那些用于替代上述内容部分，且与原内容具有相同功能或达到相同目的的网页内容。<a href="#conf-rel-wcag">WCAG 2.0</a>列举了三种笼统的类别：
+     <ul>
+
+       <li><dfn><a id="def-Text-Alternatives" name="def-Text-Alternatives"></a>非文本内容的替代文本：</dfn>以编程方式将<a class="termdef" href="#def-Non-Text-Objects" title="definition: non-text objects">非文本内容</a>与文本关联起来，或引用与非文本内容以<a href="#def-Associated-Alternative-Content" title="definition: alternative content" class="termdef">程序相关的</a>的文本。例如，图表的图像可能具有两个文本替代：图表之后的段落中的说明和用一个简短的文本替代指明在图表之后会有说明文字。</li>
+       <li><dfn><a id="def-Time-Based-Alternatives" name="def-Time-Based-Alternatives"></a>时基媒体的替代内容：</dfn>指与一个或多个时基媒体拥有相同功能或达到相同目的的<a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>。包括：字幕、音频描述、扩展音频描述、手语翻译以及正确排列的视觉/听觉交互内容的文字描述。</li>
+       <li><dfn><a id="def-Media-Alternatives" name="def-Media-Alternatives"></a>文本内容的替代媒体：</dfn>指用于替代文字的媒体内容。这些媒体内容所提供的信息量不得超出被替代之文字所提供的信息量（包括直接信息与替代文本所包含的信息）。上述媒体供从文本之外的替代内容中收益之用户。替代媒体可以是纯音频、纯视频（包含手语视频）或音视频。</li>
+     </ul>
+      从开发工具的角度来说，重要的是替代内容既可以是，也可以不是：
+	 <ul>
+	   <li>
+     <a id="def-Associated-Alternative-Content" name="def-Associated-Alternative-Content"></a><dfn>程序相关的替代内容：</dfn>指那些位置与目的都是从原内容出发，由<a class="termdef" href="#def-Programmatically-Determined" title="definition: programmatically determined">由程序决定</a>替代内容。例如：一段文段可以是一个图片的替代内容，但当且仅当之二者之间的关系由恰当的方式所编码（例如，使用&quot;aria-labeledby&quot;属性）时，该文段才被成为程序决定的替代内容。<br />
+<em>注：</em>ATAG2.0 中，提到“替代内容”时，通常指程序相关的替代内容。</li>
+	 </ul></dd>
+    
+	<dt><a id="def-Assistive-Technology" name="def-Assistive-Technology"><dfn>辅助技术（assistive technology）</dfn></a><!-- [adapted from WCAG 2.0] --></dt>
+   <dd>指<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>之外，为满足残障人士（包括<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>和<a class="termdef" href="#def-End-Users" title="definition: end user">终端用户</a>）的特殊需求而提供特定功能的软件或硬件。某些开发工具也会提供<a href="#def-Direct-Accessibility" title="definition: direct accessibility features" class="termdef">直接无障碍特性</a>。辅助技术的例子包括：
+     <ul>
+         <li>屏幕放大镜以及其它的（视觉）阅读助手：部分用户由于视觉障碍、认知功能障碍以及其它物理障碍，无法正常地阅读印刷品（译者注：不包含屏幕上所列印的内容）。此种技术将为这些用户提供字体、字号、间距、颜色的修改功能，以及同步朗读等其它功能，以提高屏幕上所渲染的文字与图片的可读性/可视性。</li>
+       <li>屏幕朗读：此种技术将屏幕上的文字信息转化为语音合成的信息或盲文以满足盲人用户的需求。</li>
+       <li>文字转语音软件：此种技术为受限于认知障碍、语言障碍或学习障碍的用户将文字转换为合成的语音。</li>
+       <li>语音识别软件：此种技术为受限于某些物理障碍的用户提供帮助。</li>
+       <li>额外的键盘选择（替代键盘）：此种技术为受限于某些物理障碍的用户提供模拟键盘的功能（包括使用头套辅助活动杆、单键开关、吹吸开关以及其它特殊输入设备作为键盘的替代物）。</li>
+       <li>额外的点按/指向设备：此种技术为受限于某些物理障碍的用户提供模拟鼠标指向/点按的功能。</li>
+     </ul>
+   </dd>
+    
+	<dt><a id="def-Audio" name="def-Audio"><dfn>音频（audio）</dfn></a><!-- [adapted from WCAG 2.0] --></dt>
+   <dd>指声音重现的技术。音频可以被综合性地生成（包括语音合成），或从现实世界的声音中录制，或二者兼备。</dd>
+
+	<dt><a id="def-Author-Actions-Prevent" name="def-Author-Actions-Prevent"><dfn>妨碍网页无障碍内容生成的开发者行为
+（author actions preventing generation of accessible web content）</dfn></a></dt>
+   <dd>指某些妨碍<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>生成<a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible web content">无障碍网页内容（WCAG）</a>的<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>行为。例子包括：关闭<a class="termdef" href="#def-Accessible-Content-Support-Features" title="definition: accessible content support features">无障碍内容支持特性</a>、忽视无障碍访问性信息的<a href="#def-Prompt" title="definition: prompt" class="termdef">提示</a>、收到上述提示时提供错误的<a class="termdef" href="#def-Accessibility-Information" title="definition: accessibility information">无障碍信息 (WCAG)</a>、修改开发工具（例如通过脚本或通过宏定义进行修改）以及安装<a href="#def-Plugin" title="definition: plug-in" class="termdef">插件</a>等。</dd>
+	
+	<dt><dfn><a id="def-Author" name="def-Author"></a>开发者（authors）</dfn></dt>
+
+	<dd>指使用<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>进行创作或修改<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>的人。此术语涵盖了内容创作者、设计者、编程者、发布者、测试者等等（详见<a href="#part_b_applic_note_6">Part B 一致性适用 注6：多种开发角色</a>）。有些开发工具可以通过管理<a href="#def-Authoring-Permission" title="definition: author permission" class="termdef">开发许可</a>来控制可以成为开发者的人选。</dd>
+	<dt><a id="def-Authoring-Permission" name="def-Authoring-Permission"><dfn>开发许可（authoring permission）
+</dfn></a></dt>
+	<dd>指对特定<a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>进行修改的授权。
+</dd>
+
+	<dt><a name="def-Authoring-Action" id="def-Authoring-Action"></a><dfn>开发行为（authoring action）
+</dfn></dt>
+   <dd>指任何<a class="termdef" href="#def-Author" title="definition: author">开发者</a>使用<a class="termdef" href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface">开发工具用户界面</a>且结果为编辑<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>（例如输入文字、删除元素、插入<a href="#def-Element" title="definition: element" class="termdef">元素</a>、应用<a href="#def-Template" title="definition: template" class="termdef">模板</a>等）的行为。与之相反，许多开发工具界面也允许非编辑性（例如保存、<a href="#def-Publishing" title="definition: publishing" class="termdef">发布</a>、设置首选项、查看<a href="#def-Documentation" title="definition: documentation" class="termdef">用户手册/开发文档</a>）的行为。
+      <ul>
+       <li><dfn><a name="def-Reversible-Action" id="def-Reversible-Action"></a>可逆的开发行为</dfn>：一个<a class="termdef" href="#def-Authoring-Action" title="definition: authoring action">开发行为</a>被认为是可逆的开发行为，当且仅当开发者可以通过对<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>发送撤销请求来立即对该行为实现完全的撤销。撤销请求的例子包括：&quot;撤销&quot;、&quot;取消&quot;、&quot;重做&quot;（即&quot;取消&quot;的逆操作）、&quot;恢复&quot;、&quot;回滚&quot;。<br />
+        <em>注：</em>对于开发工具来说，将一系列文本输入操作（例如，键入的文字、一串空格）收集为一个可逆的创作动作是可行的。</li>
+     </ul>
+   </dd>
+
+	
+   <dt><a name="def-Authoring-Outcome" id="def-Authoring-Outcome"></a><dfn>开发成果（authoring outcome）
+</dfn></dt>
+   <dd>指<a class="termdef" href="#def-Authoring-Action" title="definition: authoring action">开发行为</a>所导致的内容修改或生成的<a class="termdef" href="#def-Web-Content" title="definition: web content">内容</a>。开发成果是累积的（例如：先输入文字、再修改其样式、再将其转换为一个链接、再赋予一个标题）。</dd>
+
+	
+   <dt><a name="def-Authoring-Practice" id="def-Authoring-Practice"></a><dfn>开发实践（authoring practice）
+</dfn></dt>
+   <dd>指<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>为了实现一个特定的开发成果（例如：使用样式表控制内容的<a href="#def-Presentation" title="definition: presentation" class="termdef">呈现</a>）所遵循的方式或途径。根据开发工具的不同设计，<a href="#def-Authoring-Outcome" title="definition: authoring outcome" class="termdef">开发成果</a>可能由开发者选择，也可能由<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>选择。开发工具可能是（或可能不是）：
+	<ul>
+	 <li><a name="def-Acc-Auth-Practice" id="def-Acc-Auth-Practice"></a><dfn>无障碍开发实践(WCAG):</dfn>无障碍开发实践：指<a href="#def-Authoring-Outcome" title="definition: authoring outcome" class="termdef">开发成果</a>达到<a href="#conf-rel-wcag">WCAG 2.0</a>所述A级、AA级或AAA级标准的开发实践。有些无障碍开发实践需要<a href="#def-Accessibility-Information" title="definition: accessibility information" class="termdef">无障碍信息 (WCAG)</a>。</li>
+	</ul></dd>
+
+   <dt><a name="def-Authoring-Session" id="def-Authoring-Session"></a><dfn>开发期（authoring session）</dfn></dt>
+   <dd>指<a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>可以在<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>当中被编辑的状态。
+	
+	 <ul>
+	   <li><a name="def-End-Auth-Session" id="def-End-Auth-Session"></a><dfn>开发期的结束点：</dfn>某个特定的时间点被认为是开发期结束点，当且仅当此时点之后<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>无法在不进入新的<a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">会话</a>的前提下做出任何<a class="termdef" href="#def-Authoring-Action" title="definition: authoring action">开发行为</a>。开发期结束点可能由开发者决定（例如：关闭文档、<a href="#def-Publishing" title="definition: publishing" class="termdef">发布</a>等），也有可能由开发工具决定（例如：在协作系统中，<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>将开发许可从某开发者处转移至另一开发者处）。<br />
+       <em>注：</em>开发期结束点与<a href="#def-Publishing" title="definition: publishing" class="termdef">发布</a>不同。在开发期结束点之后以及最初的发布之后，<a href="#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">自动生成内容</a>的过程都可能继续进行。</li></ul></dd>
+
+	
+   <dt><a id="def-Authoring-Tool" name="def-Authoring-Tool"><dfn>开发工具（authoring tool）</dfn></a></dt>
+   <dd>指任何被<a class="termdef" href="#def-Author" title="definition: author">开发者</a>（个人或协作）用于创作或修改<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>以供他人（<a class="termdef" href="#def-End-Users" title="definition: end user">终端用户</a>或其它开发者）使用的应用。开发工具可以是基于web的，也可以是不基于web的。<br />
+     <em>注1：&quot;应用&quot;：</em>ATAG2.0可以被独立应用或应用的集合所遵守。任何宣称符合ATAG2.0的行为必须包含其每个应用的认证信息，以及其它扩展、插件等的认证信息。<em><br />
+
+      注2：&quot;个人或协作&quot;：</em>网页内容可由多于一个开发者实现；在此过程中，根据开发工具的不同，每个开发者可能对内容的不同部分进行开发，同时也可能会拥有不同的<a href="#def-Authoring-Permission" title="definition: author permission" class="termdef">开发许可</a>。<em><br />
+      注3：&quot;用于创作或修改网页内容&quot;：</em>此限定语说明，若某软件从某用户处采集数据用作他途（例如：在线购物的订单表单）并以此数据为基础创建其它网页内容（例如：在线的仓库内订单）且不告知该用户，则该软件不属于开发工具（但仍然适用于<a href="#conf-rel-wcag">WCAG 2.0</a>）。此外，此限定语说明，若某软件被用来创作专门用于非网页的内容，则该软件不属于开发工具。<em><br />
+
+      注4：&quot;以供他人使用&quot;：</em>此限定语说明，若某应用被用来修改网页内容，且仅作用于修改者自身使用体验（例如：网页端电子邮件的显示设置）或仅用于自动过程中的输入（例如：图书馆的搜索页），则该软件不属于开发工具。<em><br />
+     </em>一般意义上，在ATAG 2.0下被认为是开发工具的软件包括以下样例：
+     <ul>
+       <li>网页开发工具（例如<a class="termdef" href="#def-WYSIWYG" title="definition: WYSIWYG">所见即所得</a>的HTML编辑器）</li>
+       <li>用于直接编辑源码的软件</li>
+
+       <li>用于将其他内容转换为网页内容或相关<a class="termdef" href="#def-Web-Content-Technology" title="definition: technology (Web content)">网页内容技术</a>的软件（例如：Office文档应用中&quot;另存为HTML文档&quot;功能）</li>
+       <li>集成开发环境（例如：用于网页应用开发的集成开发环境）</li>
+       <li>基于<a href="#def-Template" title="definition: template" class="termdef">模板</a>、脚本、命令行输入或&quot;向导&quot;类应用，生成网页内容的软件</li>
+
+       <li>快速更新网页内容某些部分的软件（例如：博客系统、百科系统、在线论坛）</li>
+       <li>用于生成或管理整个网站的软件（例如：内容管理系统、课件工具、内容聚合器）</li>
+       <li>使用网页技术发送邮件的电子邮件客户端</li>
+       <li>多媒体开发工具</li>
+       <li>用于开发移动端网页应用的软件</li>
+     </ul>
+
+     不被ATAG2.0认为是开发工具的应用包括一下样例（请注意，以下任何一个软件，若是基于web的，则仍然适用于WCAG2.0）：
+     <ul>
+	  <li>可定制化的个人门户网站：不适用于ATAG2.0，因为任何被编辑的网页内容均只对该网站的所有者可用</li>
+	  <li>电子商务订单表单：不适用于ATAG2.0，因为该应用的目的是为了订购产品，而非在网页中与他人进行交互，即使从该表单处收集的数据产生了其它的网页内容（例如：在线追踪包裹）</li>
+	  <li>独立的无障碍访问性检测工具：不适用于ATAG2.0，因为任何不具有半自动修复功能或自动修复功能的上述检测工具并不会修改网页内容。相反，具有修复功能, 或是从属于某个更大的开发过程的无障碍访问性检测工具，将会被认为是开发工具。<br />
+   </li></ul>
+   </dd>
+	
+	   <dt><dfn><a id="def-Authoring-Tool-Interface" name="def-Authoring-Tool-Interface"></a>开发工具界面（authoring tool user interface）
+</dfn></dt>
+   <dd>指<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>用于操作<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>的显示机制与控制机制。此界面可能是基于web的，也可能是不基于web的，也可能是之二者的混合（例如：一个不基于web的开发工具可能拥有基于web的帮助页面）：
+     <ul>
+
+       <li><a name="def-Non-Web-Based" id="def-Non-Web-Based"></a><dfn>开发工具界面（不基于web）：</dfn>指开发工具界面当中，所有不通过<a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>的方式实现，而是直接运行在非<a href="#def-User-Agent" title="definition: user agent" class="termdef">用户代理</a>的<a href="#def-Platform" title="definition: platform" class="termdef">平台</a>上（例如：Windows, Mac OS, JVM, iOS, Android）的那些部分。</li>
+       <li><a id="def-Web-Based-UI" name="def-Web-Based-UI"></a><dfn>开发工具界面（基于web）：</dfn>指开发工具界面当中，所有由网页内容及相关<a href="#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">技术</a>实现，且<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>通过<a class="termdef" href="#def-User-Agent" title="definition: user agent">用户代理</a>来访问的那些部分。</li>
+     </ul>
+      开发工具界面可能是（或可能不是）：
+	 <ul>
+	   <li><dfn><a id="def-Accessible-Authoring-Interface" name="def-Accessible-Authoring-Interface"></a>无障碍可访问的开发工具界面：</dfn>指满足ATAG 2.0<a href="#part_a">A部分</a>当中要求的开发工具界面。</li>
+	 </ul></dd>
+
+   <dt><a id="def-Checking" name="def-Checking"><dfn>无障碍检测（checking, accessibility）
+</dfn></a><!-- [harmonized with EARL 1.0] --></dt>
+
+   <dd>指评估<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>中的<a class="termdef" href="#def-Web-Content-Accessibility-Problem" title="definition: web content accessibility problem">无障碍访问性问题 (WCAG)</a>的过程。ATAG2.0将以下三种过程视为检测（按照自动化程度由低到高排列）：
+	 <ul><li><a name="def-Manual-Checking" id="def-Manual-Checking"></a><dfn>人工检测：</dfn>指仅由<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>人工实施的检测。包括开发者根据<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>提供的指示或指导进行检测的过程（注意，在这种情况下，进行检测的必须仍然是开发者自身）。</li>
+   <li><a name="def-Semi-Automated-Checking" id="def-Semi-Automated-Checking"></a><dfn>半自动检测：</dfn>指开发者人工实施检测的一部分，开发工具实施检测的剩下一部分的检测过程（注意，在这种情况下，开发者的输入或判断对于测试结果来说仍然是必需的）。</li>
+
+	<li><a name="def-Automated-Checking" id="def-Automated-Checking"></a><dfn>自动检测：</dfn>指仅由开发工具自动实施，没有开发者任何参与的检测。</li>
+	</ul>
+    An authoring tool may support any combination of checking types.
+   </dd>
+      
+   <dt><a name="def-Web-Content" id="def-Web-Content"></a><dfn>内容（网页内容）（content / web content）</dfn><!-- [adapted from WCAG 2.0] --></dt>
+   <dd>指通过<a class="termdef" href="#def-User-Agent" title="definition: user agent">用户代理</a>传递给<a class="termdef" href="#def-End-Users" title="definition: end user">终端用户</a>的信息或感官体验，包括对该内容的结构、呈现以及交互进行定义的代码和<a href="#def-Markup" title="definition: markup" class="termdef">标签</a>。在ATAG2.0当中，此术语被主要用于指代由<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>生成的输出。上述输出也可能是网页应用，包括<a class="termdef" href="#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)">基于web</a>的开发工具。上述内容可能是（或不是）：
+     <ul>
+        
+       <li><dfn><a id="def-Accessible-Web-Content" name="def-Accessible-Web-Content">无障碍内容(WCAG)：</a></dfn>指在满足WCAG2.0要求的无障碍可访问的<a href="#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">技术</a>支持下，满足<a href="#conf-rel-wcag">WCAG 2.0</a>所述A级、AA级或AAA级的内容。
+         <ul>
+           <li><em>注1：</em>若上述被依赖的技术未能达到无障碍可访问，那么依赖于该技术的内容将不满足WCAG2.0的要求，终端用户当中的残障人士有可能会在访问该内容的过程当中遇到困难。</li>
+           <li><em>注2：</em>即使是满足了WCAG2.0所述最高等级（即AAA级）的内容，也有可能无法满足任何残障人士，或任何种类的残障情况，或&quot;任何残障程度，或任何残障情况的组合方式。&quot;</li>
+         </ul>
+       </li>
+       <li><dfn><a id="def-Content-Being-Edited" name="def-Content-Being-Edited">编辑中内容：</a></dfn>在一个<a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">开发期</a>中，<a class="termdef" href="#def-Author" title="definition: author">开发者</a>可以进行修改的内容。上述正在被编辑的内容可以是一个完整的内容（例如图片、样式表），也可以某个内容的一部分（例如状态更新）。上述正在被编辑的内容仅包含<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>所支持的<a href="#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">技术</a>对应的内容（例如所见即所得的HTML编辑器可以用来编辑HTML内容，但不能用来编辑图片内容）。</li>
+     </ul></dd>
+   <dt><dfn><a name="def-Web-Content-Properties" id="def-Web-Content-Properties"></a>内容属性（control properties）
+</dfn></dt>
+ <dd>指所有组成<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>的信息（例如某个元素的属性、内容，以及样式表信息）。</dd>
+    
+   <dt><a name="def-Structured-Web-Content" id="def-Structured-Web-Content"></a><dfn>内容（结构化内容）（structured）</dfn></dt>
+   <dd>指所有包含机器可读的内部结构（例如<a href="#def-Markup" title="definition: markup" class="termdef">标签</a><a href="#def-Element" title="definition: element" class="termdef">元素</a>）的<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>。其对立面为非结构化内容，例如光栅图像格式或<a class="termdef" href="#def-Human-Language" title="definition: human language">人类语言</a>文本。</dd>
+    
+   <dt><dfn><a name="def-Content-Generation" id="def-Content-Generation"></a>内容生成（content generation, content authoring, content editing）</dfn></dt>
+   <dd>指详细说明一个将被<a class="termdef" href="#def-End-Users" title="definition: end user">终端用户</a>通过<a href="#def-User-Agent" title="definition: user agent" class="termdef">用户代理</a>所渲染、播放或执行的<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>的过程。在任何一个确定的系统当中，内容生成的细节可能大相径庭，但其职责总是以下几点的任意组合：
+     <ul>
+       <li><dfn><a name="def-Content-Author-Gen" id="def-Content-Author-Gen"></a>开发者生成的内容：</dfn>指<a class="termdef" href="#def-Author" title="definition: author">开发者</a>负所有责任的<a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>。开发者可能仅对上述内容负有一个较低级别的责任（例如：当开发者被要求输入一个文本<a href="#def-Markup" title="definition: markup" class="termdef">标签</a>时，该开发者仅对上述文本负责，但不对该文本如何被标记负责；当开发者在一个<a href="#def-Editing-View" title="definition: editing views" class="termdef">编辑视图</a>中输入标签时，该开发者不对“该文本使用UNICODE编码”的事件负责）。</li>
+        
+       <li><dfn><a name="def-Content-Auto-Gen" id="def-Content-Auto-Gen"></a>自动生成的内容：</dfn>指由工具<a href="#def-Developer" title="definition: authoring tool developer" class="termdef">开发者</a>所编写的程序功能负所有责任的网页内容（例如：开发者新建一个文档的时候，具体输出哪些标签；自动更正标签错误）。</li>
+       <li><dfn>第三方内容生成：</dfn>指由第三方开发者负所有责任的网页内容（例如：社区中开源的<a href="#def-Template" title="definition: template" class="termdef">模板</a>）。</li>
+     </ul>
+   </dd>
+    
+    
+   <dt><a id="def-Content-Renderings" name="def-Content-Renderings"><dfn>内容渲染（content rendering）</dfn></a></dt>
+   <dd>指<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>界面中，令开发工具进行渲染、播放或执行<a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">编辑中网页内容</a>的功能。ATAG2.0将以下几种类别视为内容渲染：
+     <ul>
+       <li><dfn><a name="def-WYSIWYG" id="def-WYSIWYG"></a>传统渲染（&quot;所见即所得&quot;）：</dfn>一种渲染方式属于传统渲染，当且仅当该渲染方式与<a href="#def-User-Agent" title="definition: user agent" class="termdef">用户代理</a>从相同内容中生成结果的默认方式相同。用户代理工具与终端用户设置的区别意味着现实生活中并非只有唯一典型的<a href="#def-End-Users" title="definition: end user" class="termdef">终端用户</a>体验。</li>
+        
+       <li><dfn><a name="def-Unconventional-Renderings" id="def-Unconventional-Renderings"></a>非传统渲染：</dfn>一种渲染方式属于非传统渲染，当且仅当该渲染方式与用户代理工具从相同内容中生成结果的默认方式不同（例如将音频文件渲染为波形图）。</li>
+       <li><a name="def-Partial-Rendering" id="def-Partial-Rendering"></a><dfn>部分渲染：</dfn>指仅有部分（而非全部）内容被渲染（例如帧帧视频编辑器仅渲染某帧的图像，而不从时序角度渲染该<a href="#def-Video" title="definition: video" class="termdef">视频</a>）。</li>
+     </ul></dd>
+    
+   <dt><a id="def-Transformation" name="def-Transformation"><dfn>内容转换（content transformations）
+</dfn></a></dt>
+    
+   <dd>指以某种<a href="#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">网页内容技术</a>或非网页技术（例如文字处理格式）生成的<a href="#def-Web-Content" title="definition: web content" class="termdef">内容</a>为输入，以优化、重构或重编码后的内容为输出的过程：
+     <ul>
+       <li><a id="def-Optimizing-Transformation" name="def-Optimizing-Transformation"><dfn>内容优化：</dfn></a>指不改变内容所使用的技术及其结构特征的转换。这些转换不会导致信息缺失（例如：去除空格、将内嵌样式转换为外部样式表）。</li>
+       <li><a id="def-Restructuring-Transformation" name="def-Restructuring-Transformation"><dfn>内容重构：</dfn></a>指不改变内容所使用的技术，但改变其结构特征的转换（例如：将表格重组为一行或一列，将文档分页）。</li>
+       <li><a id="def-Recoding-Transformation" name="def-Recoding-Transformation"><dfn>内容重编码：</dfn></a>指改变内容所使用的编码技术的转换（例如：HTML到XHTML，文字处理格式到HTML）。</li>
+     </ul>
+     <em>注：</em>剪贴板操作，即通过平台剪贴板的内容复制与粘贴，不被视作内容转换。</dd>
+    
+    
+   <dt><a id="def-Control-Settings" name="def-Control-Settings"><dfn>控制设置（control settings）
+</dfn></a></dt>
+   <dd>指关系到<a class="termdef" href="#def-Author" title="definition: author">开发者</a>如何使用<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>的设置，例如键盘设置或鼠标设置。</dd>
+   <dt><a id="def-Developer" name="def-Developer"><dfn>工具开发者（developer）</dfn></a></dt>
+   <dd>指任何对<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>本身的开发过程负责的实体或个人。此概念也包括符合申请中申请人部分所包含的额外软件组件的程序员。在某些情况下，开发工具自身完整的开发过程要早于开发者应用该工具发布<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>；而在另一些情况下（例如<a class="termdef" href="#def-Web-Based-UI"  title="definition: Web-based authoring tool user interface">基于web的开发工具</a>），即使开发者已经使用某工具发布了一些内容，该工具的工具<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>依然会对该工具进行修改，致使<a href="#def-End-Users" title="definition: end user" class="termdef">终端用户</a>的使用体验有所改变。</dd>
+    
+   <dt><a id="def-Direct-Accessibility" name="def-Direct-Accessibility"><dfn>直接无障碍特性（direct accessibility features）
+</dfn></a></dt>
+   <dd>指<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>专门为满足<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>中残障人士的需求所提供的功能特性（例如：键盘导航、缩放、文字转语音）。其余外加功能或特殊化功能可能仍然由外部<a href="#def-Assistive-Technology" title="definition: assistive technology" class="termdef">辅助技术</a>所提供。</dd>
+   <dt><a id="def-Display-Settings" name="def-Display-Settings"><dfn>设置（显示设置）（display settings）
+</dfn></a></dt>
+    
+   <dd>指与<a class="termdef" href="#def-Author" title="definition: author">开发者</a>感知开发工具相关的设置。包括：
+     <ul>
+       <li><a id="def-Display-Settings-Audio" name="def-Display-Settings-Audio"><dfn>声音设置：</dfn></a>指音乐、声音或人声的<a href="#def-Audio" title="definition: audio" class="termdef">音频</a>输出的特性。其例子包括音量、说话声音特征、速度、重音。</li>
+       <li><a id="def-Display-Settings-Visual" name="def-Display-Settings-Visual"><dfn>视觉显示设置：</dfn></a>指文字或图片在屏幕上的渲染。其例子包括字体、大小、颜色、间距、位置、对比度。</li>
+        
+       <li><a id="def-Display-Settings-Tactile" name="def-Display-Settings-Tactile"><dfn>触觉反馈设置：</dfn></a>指触觉输出的特性。其例子包括振动强度以及振动类别。</li>
+     </ul>
+   </dd>
+   <dt><a id="def-Documentation" name="def-Documentation"></a><dfn>使用手册/开发文档（documentation）
+</dfn></dt>
+   <dd>指任何帮助使用<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>的信息。上述信息可能通过电子的形式提供，也可能通过其它形式提供。其例子包括帮助、手册、安装说明、<a class="termdef" href="#def-Workflow" title="definition: workflow">工作流</a><a href="#def-Tutorial" title="definition: tutorial" class="termdef">指导</a>、教程等。</dd>
+    
+   <dt><a id="def-Document-Object" name="def-Document-Object"></a><dfn>记录对象（document object）
+</dfn></dt>
+   <dd>指<a href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)" class="termdef">非基于web的开发工具</a>或用户代理工具中，<a class="termdef" title="definition: source content" href="#def-Instruction-Level">资源数据</a>的内部呈现形式。上述记录对象可能成为<a href="#def-Accessibility-Platform-Service" title="definition: platform accessibility architecture" class="termdef">平台无障碍服务</a>的一部分，使其可以与<a href="#def-Assistive-Technology" title="definition: assistive technology" class="termdef">辅助技术</a>进行通信。<a href="#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)" class="termdef">基于web的开发工具</a>所使用的记录对象实际上是由<a href="#def-User-Agent" title="definition: user agent" class="termdef">用户代理</a>所维护的。</dd>
+    
+   <dt><a id="def-Element" name="def-Element"><dfn>元素（element）
+</dfn></a></dt>
+   <dd>指一对<a href="#def-Markup" title="definition: markup" class="termdef">标签</a>及其内容，或一个&quot;空标签&quot;（即不要求关闭标签或内容的标签）。</dd>
+   <dt><a name="def-End-Users" id="def-End-Users"></a><dfn>终端用户（end user）
+</dfn></dt>
+   <dd>指与被开发者开发的<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>进行交互的用户，包括使用<a href="#def-Assistive-Technology" title="definition: assistive technology" class="termdef">辅助技术</a>的用户。</dd>
+    
+   <dt><a id="def-Human-Language" name="def-Human-Language"><dfn>人类语言（human language）
+</dfn></a><!-- [adapted from WCAG 2.0] --></dt>
+   <dd>指被人类用于交流的任何口头、书面或是以（视觉或触觉）符号呈现的语言。
+</dd>
+   <dt><dfn><a name="def-Informative" id="def-Informative"></a>非规范的</dfn><!-- [adapted from WCAG 2.0] --></dt>
+   <dd>指告知类信息而非一致性要求规范</dd>
+   <dt><dfn><a name="def-Keyboard-Interface" id="def-Keyboard-Interface"></a>键盘接口（keyboard interface）
+</dfn>
+     <!-- [adapted from WCAG 2.0] -->
+   </dt>
+   <dd>键盘接口是多种平台均提供的编程服务，允许独立于设备的键盘操作。即使特定设备不包含硬件键盘（例如，触摸屏控制的设备应有内置在操作系统的键盘接口，以支持屏幕键盘操作和外接键盘），键盘接口也可以允许按键输入。<br />
+   <em>注：</em>Keyboard-operated mouse emulators, such as MouseKeys, do not qualify as operation through a keyboard interface because these emulators use pointing device interfaces, not keyboard interfaces</dd>
+   <dt><dfn><a name="def-Keyboard-Trap" id="def-Keyboard-Trap"></a>键盘陷阱（keyboard trap）
+</dfn></dt>
+   <dd>一种用户界面的状态，<a class="termdef" href="#def-Keyboard-Interface" title="definition: keyboard interface">键盘接口</a>可以移动聚焦点，到某个<a class="termdef" href="#def-UI-Component" title="definition: user interface component">用户界面组件</a>或一组组件，但是无法返回。</dd>
+    
+   <dt><dfn><a id="def-Label" name="def-Label"></a>标签（label）
+</dfn><!-- [adapted from WCAG 2.0] --></dt>
+   <dd>展现给用户以识别一个<a class="termdef" href="#def-UI-Component" title="definition: user interface component">组件</a>的文本或其他有替代文本的组件。标签会被展现给所有用户，但其<a href="#def-Name" title="definition: name" class="termdef">名称</a>可能是非显示的，只能通过<a href="#def-Assistive-Technology" title="definition: assistive technology" class="termdef">辅助技术</a>获得。在大部分（但不是所有）情况下，名称和标签是一样的。</dd>
+   <dt><dfn><a id="def-Live" name="def-Live"></a>实时（live）
+</dfn><!-- [adapted from WCAG 2.0] --></dt>
+    
+   <dd>从真实世界中获取的信息直接<a href="#def-Publishing" title="definition: publishing" class="termdef">发布的</a>，没有传播延迟。
+     <br />
+     <em>注：</em>传播延迟是一种短暂的（通常是自动的）延迟，例如提供传播者时间排队或者检查音频（或视频）反馈，但是不足以允许大量编辑。</dd>
+   <dt><dfn><a name="def-Markup-Language" id="def-Markup-Language"></a>标记语言（markup language）
+</dfn></dt>
+   <dd>定义结构、表现方式或<a class="termdef" href="#def-Web-Content" title="definition: web content">内容</a>语义的文本注释系统（例如，HTML中的<a href="#def-Element" title="definition: element" class="termdef">元素</a>）和处理规则。标记语言的例子有HTML和SVG。
+   <ul><li><a name="def-Markup" id="def-Markup"></a><dfn>标记：</dfn>内容的标记是内容中的一组注释。</li></ul></dd>
+    
+    
+   <dt><a name="def-Name" id="def-Name"></a><dfn>名称（name）
+</dfn><!-- [adapted from WCAG 2.0] --></dt>
+   <dd>软件识别<a class="termdef" href="#def-UI-Component" title="definition: user interface component">用户界面组件</a>并展示给<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>或者<a href="#def-End-Users" title="definition: end user" class="termdef">终端用户</a>的一段文本。名称可能是非显示的，只能通过<a href="#def-Assistive-Technology" title="definition: assistive technology" class="termdef">辅助技术</a>获得，但<a title="definition: label" class="termdef" href="#def-Label">标签</a>是会被展示给所有用户的。在大部分（但不是所有）情况下，标签和名称是一样的。</dd>
+    
+   <dt><dfn><a id="def-Non-Text-Objects" name="def-Non-Text-Objects"></a>非文本内容（non-text content）
+</dfn><!-- [adapted from WCAG 2.0] --></dt>
+   <dd>任何不可<a class="termdef" href="#def-Programmatically-Determined" title="definition: programmatically determined">由程序决定</a>的字符序列，或不是表示<a title="definition: human language" class="termdef" href="#def-Human-Language">人类语言</a>的某些含义的序列的<a class="termdef" href="#def-Web-Content" title="definition: web content">内容</a>。它包括ASCII 表（一组字符模式），表情符号和表示文本的图像。</dd>
+   <dt><dfn><a id="def-Normative" name="def-Normative"></a>规范性的（normative）
+</dfn><!-- [harmonized with WCAG 2.0, UAAG 2.0] --></dt>
+    
+   <dd>具有一致性要求的，可以通过一系列明确定义的方式来满足ATAG2.0的一致性要求。具有&quot;<a title="definition: informative" class="termdef" href="#def-Informative">告知性的</a>&quot; 或&quot;非规范性的&quot;标识的内容不需要满足一致性要求。</dd>
+   <dt><dfn><a id="def-Option" name="def-Option"></a>选项（option）
+</dfn></dt>
+   <dd><a href="#def-Author" title="definition: authors" class="termdef">开发者</a>所面临的选择。
+
+     <ul>
+        
+       <li><dfn><a id="def-Default-Option" name="def-Default-Option"></a>默认选项：</dfn>被<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>自动设定的某个<a href="#def-Option" title="definition: option" class="termdef">选项</a>的设置或值。除非<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>取消或改变该选项，该设置或值会持续作用。</li>
+   </ul></dd>
+   <dt><dfn><a name="def-Platform" id="def-Platform"></a>平台（platform）
+</dfn></dt>
+    
+   <dd><a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>运行的软件环境。平台在底层软件平台或硬件之上提供一致的操作运行环境。对于<a href="#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)" class="termdef">基于web的开发工具界面</a>，最为相关的平台是<a href="#def-User-Agent" title="definition: user agent" class="termdef">用户代理</a>（例如，浏览器）。对于<a href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)" class="termdef">非基于web的用户界面</a>，平台的范围包括但不仅限于，桌面操作系统（例如，Linux，Mac OS，Windows上的GNOME桌面），移动端操作系统（例如，Android，BlackBerry，iOS，Windows Phone）以及跨操作系统环境（例如，JAVA），等等。<br />
+     <em>注1：</em>许多平台通过<a class="termdef" href="#def-Accessibility-Platform-Service" title="definition: accessibility platform architecture">平台无障碍服务</a>，进行平台上运行的应用程序和和辅助技术的交互。<br />
+     <em>注2：</em>许多平台都为工具<a href="#def-Developer" title="definition: authoring tool developer" class="termdef">开发者</a>提供无障碍访问性指南。</dd>
+   <dt><dfn><a id="def-Accessibility-Platform-Service" name="def-Accessibility-Platform-Service"></a>平台无障碍服务（platform accessibility service）
+</dfn></dt>
+   <dd>特定设计提供应用程序与<a href="#def-Assistive-Technology" title="definition: assistive technology" class="termdef">辅助技术</a>的交互的程序接口（例如，针对Windows应用程序的MSSA，IAccesible2和UI自动化技术，针对Mac OS X应用程序的AXAPI，针对GNOME应用程序的GNOME无障碍工具箱API，针对JAVA应用程序的JAVA Access）。在某些<a href="#def-Platform" title="definition: platform" class="termdef">平台</a>上，通常可以通过实现<a href="#def-Document-Object" title="definition: document object" class="termdef">记录对象</a>来增强通信能力。</dd>
+    
+   <dt><dfn><a name="def-Plugin" id="def-Plugin"></a>插件（plug-in）
+</dfn><!-- [adapted from UAAG 2.0] --></dt>
+   <dd>作为<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>的一部分（例如，第三方校验和<a href="#def-Repairing" title="definition: repairing" class="termdef">修复</a>工具），而不是<a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">编辑中网页内容</a>的一部分运行的程序。<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>通常可以选择是否在开发工具中使用插件。</dd>
+    
+   <dt><a id="def-Preauthored-Content" name="def-Preauthored-Content"><dfn>预开发内容（pre-authored content）
+</dfn></a></dt>
+   <dd>开发工具的<a href="#def-Developer" title="definition: authoring tool developer" class="termdef">开发者</a>在<a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">开发期</a>之前创建的<a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>片段，使得网页开发者可以应用在<a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">编辑中网页内容</a>中。示例包括剪贴画，演示视频，用户界面部件。<br />
+     <em>注1：</em><a href="#def-Template" title="definition: template" class="termdef">模板</a>是一种形式不完整的预开发内容，详情请参见<a href="#gl_b24">指南 B.2.4</a><br />
+     <em>注2：</em>如果开发工具自动使用预开发内容，请参见<a href="#gl_b11">指南 B.1.1</a>
+     <ul>
+       <li><dfn><a id="def-Accessible-Preauthored-Content" name="def-Accessible-Preauthored-Content"></a>可访问的预开发内容(WCAG):</dfn>无障碍内容或可能是<a class="termdef" href="#def-Accessible-Web-Content" title="definition: accessible Web content">无障碍网页内容(WCAG)</a>的<a href="#def-Preauthored-Content" title="definition: pre-authored content" class="termdef">预开发内容</a>，即如果它被适当的插入到空文档中，它是满足无障碍的。<br />
+       <em>注：</em>如果预开发内容被大量<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>使用，其内容可能是<a href="#def-Template" title="definition: template" class="termdef">模板</a>。</li>
+     </ul>
+   </dd>
+    
+   <dt><a id="def-Preauthored-Content-Selection-Mechanism" name="def-Preauthored-Content-Selection-Mechanism"><dfn>预开发内容选择机制（pre-authored content selection mechanism）
+</dfn></a></dt>   
+   <dd>超出标准文件选择的一种功能，它允许<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>在<a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">开发期</a>选择<a href="#def-Preauthored-Content" title="definition: pre-authored content" class="termdef">预开发内容</a>（例如，剪贴画，小部件）。</dd>
+    
+   <dt><dfn><a name="def-Presentation" id="def-Presentation"></a>呈现（presentation）
+</dfn><!-- [adapted from WCAG 2.0] --></dt>
+   <dd><a class="termdef" href="#def-Author" title="definition: authors">开发者</a>或者<a href="#def-End-Users" title="definition: end user" class="termdef">终端用户</a>感知渲染<a href="#def-Web-Content" title="definition: web content" class="termdef">内容</a>的一种方式。</dd>
+   <dt><dfn><a name="def-Programmatically-Determined" id="def-Programmatically-Determined"></a>程序决定的（程序可决定性）（programmatically determined (programmatically determinable)）</dfn><!-- [adapted from WCAG 2.0] --></dt>
+    
+   <dd>信息的编码方式允许不同的软件，包括<a href="#def-Assistive-Technology" title="definition: assistive technology" class="termdef">辅助技术</a>，以不同的方式提取和呈现在不同形态下的信息。 ATAG 2.0在如下两个情况下使用该术语：<br />
+     <ul>
+       <li>处理内容：<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>能否从<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>中提取信息（例如，从<a href="#def-Markup" title="definition: markup" class="termdef">标签</a>中获取内容的语言）</li>
+        
+       <li>开发工具和辅助技术间的沟通：对于<a href="#def-Non-Web-Based" title="definition: authoring tool user interface (non-Web-Based)" class="termdef">非基于web的用户界面</a>，它表示使用<a class="termdef" href="#def-Accessibility-Platform-Service" title="definition: accessibility platform architecture">平台无障碍服务</a>，API或在某些情况下使用记录对象模型。对于<a class="termdef" href="#def-Web-Based-UI"  title="definition: Web-based authoring tool user interface">基于web的用户界面</a>，它表示确保<a href="#def-User-Agent" title="definition: user agent" class="termdef">用户代理</a>能够传递信息（例如，利用WAI-ARIA）
+         <br/>
+       </li>
+     </ul>
+   </dd>
+   <dt><dfn><a id="def-Prominence" name="def-Prominence"></a>显著性（prominence）
+</dfn></dt>
+   <dd>对于<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>有多大可能性注意到<a class="termdef" href="#def-UI-Component" title="definition: user interface component">用户界面组件</a>的一个启发式的测量方法。显著性会被多种因素影响，包括：所需的导航操作步骤的数量，读取顺序位置，视觉属性（例如，大小，间距，颜色），甚至包括使用形式（例如，鼠标和键盘使用）
+     <ul>
+       <li><dfn><a name="def-At-Least-As-Prominent" id="def-At-Least-As-Prominent"></a>至少一样显著：</dfn>在ATAG 2.0的标准下，一个<a class="termdef" href="#def-UI-Component" title="definition: user interface component">用户界面组件</a>A被认为和另一个组件B&quot;至少一样显著&quot;，其条件是，默认状态时，组件A变成显示状态（并且启用）比组件B变成显示状态（并且启用）需要相等或更少的&quot;打开&quot;操作。<br />
+          
+         <em>注1：</em>当容器是打开状态时，即使该容器需要滚动才可见，容器中的所有已启动的组件（例如，列表中的项目，菜单中的项目，工具包中的按钮，对话框中的所有组件）被认为是显示状态（因而它们相互之间是“至少一样显著”的）。不同的屏幕大小和<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>的设置被考虑会影响在给定时间下组件的可见性。<br />
+         <em>注2：</em>&quot;打开操作&quot;是开发者在用户界面下，使得一个新的组件变成显示状态或启用状态的操作行为。例如；
+（a）顶层菜单项目到子菜单项目的显示的键盘快捷操作
+（b）键盘选择按钮以展示一个对话框
+（c）鼠标点击事件，启动一个原先被禁用的复选框子菜单、项目等等。不能导致新组件可执行（例如，焦点移动、列表滚动）的操作行为不被认为是“打开操作”。<br />
+          
+         <em>注3：</em>对于封闭状态容器中组件的键盘快捷键操作不被记作&quot;打开操作&quot;。因为该组件变成显示状态的时候不是显著的。 对于开发者使用&quot;搜索&quot;功能来发现封闭状态容器中的组件的情况，也同样成立。<br />
+       <em>注4：</em>&quot;默认状态&quot;是<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>在开发期初始，由工具开发者所设置的状态。在许多文档开发工具中，默认状态是<a href="#def-Editing-View" title="definition: editing views" class="termdef">编辑视图</a>。</li>
+     </ul> 
+   </dd>
+   <dt><a id="def-Prompt" name="def-Prompt"><dfn>提示（prompt）
+</dfn></a></dt>
+   <dd>由<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>发起的决策请求，或者企图获得<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>信息的请求。这个术语不仅涵盖必须立即响应的请求（例如，模态对话框），还包括相对不紧急的请求（例如，提示强调拼写错误的单词）。</dd>
+   <dt><dfn><a name="def-Publishing" id="def-Publishing"></a>发布（publishing）
+</dfn></dt>
+    
+   <dd><a href="#def-Author" title="definition: authors" class="termdef">开发者</a>或<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>将<a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>对<a href="#def-End-Users" title="definition: end user" class="termdef">终端用户</a>开放（例如，上载网页页面，在Wiki上提交修改，或直播）的任何时间点。</dd>
+    
+    
+   <dt><a name="def-Range" id="def-Range"></a><dfn>区间（range）
+</dfn></dt>
+   <dd>多项目集合中的多个项目。
+<br/>
+   <em>告知性注：</em>在绝对度量可能不实际的情况下（例如，所有帮助<a href="#def-Documentation" title="definition: documentation" class="termdef">用户手册/开发文档</a>的集合，所有<a href="#def-Template" title="definition: template" class="termdef">模板</a>的集合），ATAG 2.0使用术语&quot;区间&quot;。虽然定义&quot;多项目集合中的多个项目&quot;是严格要求可测量的，我们还是强烈建议实施者更加广泛地实施成功标准。</dd>
+    
+   <dt><a name="def-Relationships" id="def-Relationships"></a><dfn>关系（relationships）
+</dfn><!-- [adapted from WCAG 2.0] --></dt>
+   <dd>不同<a href="#def-Web-Content" title="definition: web content" class="termdef">内容</a>之间的有意义的联系。
+</dd>
+    
+   <dt><a id="def-Repairing" name="def-Repairing"></a><dfn>修复过程（无障碍访问性）（repair (accessibility)）
+</dfn><!-- [harmonized with EARL 1.0] --></dt>
+   <dd><a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>中的<a class="termdef" href="#def-Web-Content-Accessibility-Problem" title="definition: web content accessibility problem">网页内容的无障碍访问性问题</a>被解决的过程。基于递增的自动化程度，ATAG 2.0将修复分为三种类型：<ul>
+        
+       <li><a name="def-Manual-Repairing" id="def-Manual-Repairing"></a><dfn>人工修复：</dfn><a href="#def-Author" title="definition: authors" class="termdef">开发者</a>执行修复过程。这种类型的修复包括开发者在<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>提供的指令或指导的帮助下完成修复过程的情况，但实际的修复手续仍是由开发者完成的。</li>
+       <li><a name="def-Semi-Automated-Repairing" id="def-Semi-Automated-Repairing"></a><dfn>半自动修复：</dfn>部分修复工作由开发工具完成，但是开发者的人工输入和判断对于完成修复仍是必要的。</li>
+        
+       <li><a name="def-Automated-Repairing" id="def-Automated-Repairing"></a><dfn>自动修复：</dfn>修复过程完全由开发工具自动完成，而不需要开发者的任何干预。</li>
+     </ul>
+   </dd>
+   <dt><a name="def-Restrictions" id="def-Restrictions"></a><dfn>限制（开发限制）（restrictions, restricted web content authoring）
+</dfn></dt>
+    
+   <dd><a href="#def-Author" title="definition: authors" class="termdef">开发者</a>可以通过<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>指定，<a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>中必须包含或者必须不包含特定内容（例如，元素，属性，窗口小部件）。许多开发工具以某种方式限制开发，这可能有利于无障碍的实现（例如，要求非文本内容的替代文本）或者有损于无障碍（例如，用于设置非文本内容的替代文本的属性不可用）。与此相反，对网页内容开发不作限制的开发工具不要求任何内容一定要出现或者不出现在网页中（例如，许多<a href="#def-Instruction-Level" title="definition: View - Source view" class="termdef">编辑中无渲染视图</a>）。</dd>
+    
+   <dt><a name="def-Role" id="def-Role"></a><dfn>角色（role）
+</dfn><!-- [adapted from WCAG 2.0] --></dt>
+   <dd>文本或数字，软件用于识别<a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>中的组件的功能（例如，指示图像是否用作超链接，控制按钮或复选框的字符串）。</dd>
+   <dt><dfn><a name="def-Sequential-Keyboard-Access" id="def-Sequential-Keyboard-Access"></a>顺序键盘访问（sequential keyboard access）
+</dfn>
+     <!-- [adapted from UAAG 1.0] -->
+   </dt>
+   <dd>使用<a class="termdef" href="#def-Keyboard-Interface" title="definition: keyboard interface">键盘接口</a>，操纵聚焦点逐个顺序遍历一个有序集的所有项目（例如，菜单项目，表单域），直到需求项目被访问和激活。这区别于直接的键盘访问方法，如键盘快捷键和旁路链接。</dd>
+   <dt><a id="def-Web-Content-Technology" name="def-Web-Content-Technology"><dfn>技术（网页内容）（technology (web content)）
+</dfn></a><!-- [harmonized with WCAG 2.0] --></dt>
+   <dd>被<a href="#def-User-Agent" title="definition: user agent" class="termdef">用户代理</a>渲染、展示和执行编码指令的一种机制。网页内容技术可能包括<a href="#def-Markup-Language" title="definition: markup language" class="termdef">标记语言</a>，数据格式，或编程语言。<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>可以单独或组合使用它们，来创造从静态网页页面到多媒体演示，再到动态页面应用的各类<a class="termdef" href="#def-End-Users" title="definition: end user">终端用户</a>体验。一些常见的网页内容技术例子包括HTML，CSS， SVG， PNG，PDF，Flash，Silverlight，Flex和JavaScript。</dd>
+    
+   <dt><a id="def-Template" name="def-Template"><dfn>模板（template）
+</dfn></a></dt>
+   <dd>由<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>或者<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>填充的，用来为<a href="#def-End-Users" title="definition: end user" class="termdef">终端用户</a>制作<a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>（例如，文档模板，内容管理模板，演示主题）的一种内容模式。一般情况下，模板会至少预先定义一些开发决策。<ul>
+       <li><dfn><a id="def-Accessible-Template" name="def-Accessible-Template"></a>无障碍模板(WCAG)：</dfn>被填充以产生符合<a href="#conf-rel-wcag">WCAG 2.0</a>标准（级别A，AA或AAA）的网页内容的模板。当以下两点成立时，即认为符合标准：
+         <ol type="a">
+           <li>开发者正确的遵守指令（例如，正确地响应<a href="#def-Prompt" title="definition: prompt" class="termdef">提示</a>，正确地放置高亮的占位符）</li>
+           <li>没有进一步的开发</li>
+         </ol>
+         <em>注：</em>在这些情况下，有些模板会导致全空的文档，则默认它们是无障碍的。</li>
+     </ul>
+   </dd>
+    
+    
+    
+   <dt><a id="def-Template-Selection-Mechanism" name="def-Template-Selection-Mechanism"><dfn>模板选择机制（template selection mechanism）
+</dfn></a></dt>   
+   <dd>超出标准文件选择的一种功能，它允许<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>选择<a href="#def-Template" title="definition: template" class="termdef">模板</a>作为新内容的基础或应用到现有的<a href="#def-Web-Content" title="definition: web content" class="termdef">内容</a>。</dd>
+    
+   <dt><a name="def-Time-Limit" id="def-Time-Limit"></a><dfn>时间限制（time limit）
+</dfn></dt>
+   <dd><a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>提供给<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>执行工作（例如，读取消息，选择项目，保存修改）的时间。示例包括：开发期超时、时基展示（例如，教学视频）。</dd>
+    
+   <dt><a name="def-Tutorial" id="def-Tutorial"></a><dfn>教程（tutorial）
+</dfn></dt>
+   <dd>提供执行多重任务的分步指令说明的一种<a href="#def-Documentation" title="definition: documentation" class="termdef">用户手册/开发文档</a>。</dd>
+    
+   <dt><a id="def-User-Agent" name="def-User-Agent"><dfn>用户代理工具（user agent）
+</dfn></a><!-- [adapted from WCAG 2.0] --></dt>
+   <dd>任何检索、渲染和帮助<a href="#def-End-Users" title="definition: end user" class="termdef">终端用户</a>和<a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>进行交互的软件（例如，网页浏览器，浏览器插件，多媒体播放器）。
+     <ul>
+       <li><a id="def-Inmarket-User-Agent" name="def-Inmarket-User-Agent"></a><dfn>市场中的用户代理：</dfn>可以被公众获得（免费或其他方式）的用户代理工具。通常情况下，市场中的用户代理是一个与开发工具分离的软件。但是，有时它也可能具有整合用户代理和<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>的功能。这些情况具体叙述如下：
+         <ul>
+           <li><dfn>仅预览：</dfn>如果用户代理工具只能从相关的开发功能中获取内容并渲染展示，那么该软件是具有预览特性的开发工具。具有仅<a class="termdef" href="#def-Preview" title="definition: preview">预览</a>特性的用户代理工具<em>不被认为是一个市场中的用户代理</em>。</li>
+           <li><a id="def-ua-with-authoring-tool-role" name="def-ua-with-authoring-tool-role"></a><dfn>具有开发者工具模式的用户代理：</dfn>
+            如果用户代理功能必须检索并打开网页内容，然后才能将其放到开发工具，则该软件是具有开发工具模式的用户代理。如果一个用户代理被用于预览由开发工具模式生成的内容，那它可以被认为是市场中的用户代理。</li>
+           <li><a id="def-comb-ua-authoring-tool" name="def-comb-ua-authoring-tool"></a><dfn>整合用户代理/开发工具：</dfn>默认用户交互模式允许编辑网页内容的用户代理工具。这样的工具不需要预览功能，因为开发者可以以终端用户一样的方式体验内容。</li>
+         </ul>
+          
+       </li>
+     </ul>
+   </dd>
+   <dt><a id="def-UI-Component" name="def-UI-Component"><dfn>用户界面组件（user interface component）
+</dfn></a><!-- [adapted from WCAG 2.0] --></dt>
+   <dd><a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">用户界面</a>或内容展示（包括<a href="#def-Content-Renderings" title="definition: content rendering" class="termdef">内容渲染</a>）的一部分，它被<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>感知为具有独特功能的单个控件。</dd>
+    
+   <dt><a name="def-Video" id="def-Video"><dfn>视频（video）
+</dfn></a><!-- [adapted from WCAG 2.0] --></dt>
+   <dd>动态图片或图像的技术。视频可以由动画或照片图像组成，或两者均有。
+</dd>
+   <dt><a id="def-View" name="def-View"><dfn>视图（view）
+</dfn></a></dt>
+   <dd><a href="#def-Author" title="definition: authors" class="termdef">开发者</a>用来与<a class="termdef" href="#def-Content-Being-Edited" title="definition: web content being edited">编辑中网页内容</a>进行交互的用户界面功能。ATAG 2.0根据视图是否支持编辑将其分类：
+     <ul>
+        
+       <li><a name="def-Editing-View" id="def-Editing-View"></a><dfn>编辑视图：</dfn>部分或全部内容可编辑的视图</li>
+       <li><a name="def-Preview" id="def-Preview"></a><dfn>预览：</dfn>不支持任何<a href="#def-Authoring-Action" title="definition: authoring actions" class="termdef">开发行为</a>的视图（例如：不可编辑的视图）。预览功能被用来呈现正在被<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>编辑的网页内容，就像用户代理工具呈现给<a href="#def-End-Users" title="definition: end user" class="termdef">终端用户</a>的一样。预览功能可以通过实际市场中的<a class="termdef" href="#def-User-Agent" title="definition: user agent">用户代理</a>实现，但这不是必须的。</li>
+     </ul>
+      同时，ATAG 2.0认为可以用如下几种方法在一个视图中呈现内容：
+     <ul>
+        
+       <li><a name="def-Instruction-Level" id="def-Instruction-Level"></a><dfn>无渲染视图：</dfn><dfn>:</dfn>内容以未渲染的形式呈现（例如，纯文本编辑器）</li>
+       <li><a name="def-Rendered-View" id="def-Rendered-View"></a><dfn>有渲染视图：</dfn><a href="#def-Content-Renderings" title="definition: content rendering" class="termdef">内容渲染</a>呈现（以传统方法、非传统方法或者部分方法）</li>
+       <li><a name="def-Meta-Content" id="def-Meta-Content"></a><dfn>属性视图：</dfn>只有内容的属性被呈现。开发工具可以利用这些属性<a href="#def-Content-Auto-Gen" title="definition: content generation" class="termdef">自动生成</a>内容并<a href="#def-Publishing" title="definition: publishing" class="termdef">发布的</a>（例如，CMS日历小程序可以根据月份和年份自动生成日历）。</li>
+     </ul>
+   </dd>
+   <dt><a id="def-Workflow" name="def-Workflow"></a><dfn>工作流程（workflow）
+</dfn></dt>
+   <dd><a href="#def-Author" title="definition: authors" class="termdef">开发者</a>生产可交付<a href="#def-Web-Content" title="definition: web content" class="termdef">内容</a>所遵循的习惯步骤或工作顺序。如果某个<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>由一些应用程序组成（例如，<a href="#def-Markup" title="definition: markup" class="termdef">标签</a>编辑器，图片编辑器和验证工具），其工作流程可能包括一个或多个应用程序的使用。</dd>
+ </dl>
+ <hr />
+</div><!-- sect-definitions -->
+<div id="sect-references">
+ <h2><a id="references" name="references"></a>附录<span class="gl-only">B</span>：参考文献</h2>
+ <p>对于任何<acronym title="the World Wide Web Consortium">W3C</acronym>标准的<strong>最新版本</strong>，请参阅<a href="http://www.w3.org/TR/">W3C技术报告列表</a>，网址为http://www.w3.org/TR/。自本文件发布以来，下面列出的一些文件可能已被取代。</p>
+ <p>本节是<a href="#def-Normative" title="definition: normative" class="termdef">规范性的</a></p>
+ <dl>
+    
+    
+   <dt><a name="ref-UAAG10" id="ref-UAAG10">[UAAG10]</a></dt>
+   <dd>&quot;<a href="http://www.w3.org/TR/2002/REC-UAAG10-20021217/">User Agent Accessibility Guidelines
+    1.0</a>,&quot;, I. Jacobs, J. Gunderson, and E. Hansen, eds.17 December 2002</dd>
+   <dt><a name="ref-WCAG20" id="ref-WCAG20"></a>[WCAG20]</dt>
+
+   <dd>&quot;<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/">Web Content Accessibility Guidelines 2.0</a>&quot;, B. Caldwell, M. Cooper, L. Guarino Reid, and G. Vanderheiden, eds. 11 December 2008</dd>
+ </dl>
+ <p>本节是<a href="#def-Informative" title="definition: informative" class="termdef">告知性的</a></p>
+ <dl><dt><a name="ref-ATAG10" id="ref-ATAG10">[ATAG10]</a></dt>
+   <dd>&quot;<a href="http://www.w3.org/TR/2000/REC-ATAG10-20000203/">Authoring Tool Accessibility Guidelines 1.0</a>&quot;, J. Treviranus, C. McCathieNevile, I. Jacobs, and J. Richards, eds., 3 February 2000</dd>
+    
+   </dl>
+
+
+</div><!-- sect-references -->
+<hr />
+<div id="sect-acknowledgments">
+ <h2><a id="acknowledgments" name="acknowledgments"></a>附录<span class="gl-only">C</span>：致谢</h2>
+
+ <h3><a name="active-participants" id="active-participants"></a>出版时活跃于AUWG的参与者：</h3>
+ <ul>
+   <li>Tom Babinszki (IBM)</li>
+   <li>Tim Boland (National Institute for Standards and Technology)</li>
+   <li>Alastair Campbell (Nomensa)</li>
+
+   <li>Alessandro Miele (Invited Expert)</li>
+   <li>Jan Richards (Inclusive Design Institute, OCAD University)</li>
+
+   <li>Jeanne Spellman (W3C)</li>
+   <li>Jutta Treviranus (WG Chair; Inclusive Design Institute, OCAD University)</li>
+ </ul>
+<h3 id="atag-testers">ATAG候选人推荐测试志愿者：</h3>
+<ul>
+<li>Victoria Clark</li>
+<li>Maria Carmen C. Cruz</li>
+<li>Emanuela Gorla</li>
+
+<li>Michael Gower</li>
+<li>Anne Jackson</li>
+<li>Taliesin Love Smith</li>
+</ul>
+<h3><a name="previous-participants" id="previous-participants"></a>其他之前活跃的AUWG参与者和其他ATAG 2.0的贡献者：
+</h3>
+  <dl>
+     <dt>之前的编辑们：</dt>
+     <dd>Tim  Boland, NIST</dd>
+     <dd>Matt May (until June 2005 while at<acronym title="World Wide Web Consortium">W3C</acronym>）</dd>
+     </dl>
+ <p>Kynn Bartlett, Giorgio Brajnik, Judy Brewer, Wendy Chisholm, Daniel Dardailler, Geoff Deering, Cherie Ekholm, Barry A. Feigenbaum, Katie Haritos-Shea, Kip Harris, Phill Jenkins, Len Kasday, Marjolein Katsma, Alex Li, William Loughborough, Karen Mardahl, Matt May, Charles McCathieNevile, Ann McMeekin, Matthias M&uuml;ller-Prove, Liddy Nevile, Sueann Nichols, Graham Oliver, Greg Pisocky, Wendy Porch, Sarah Pulis, Bob Regan, Chris Ridpath, Andrew Ronksley, Gregory Rosmaita, Roberto Scano, Dana Simberkoff, Reed Shaffner, Michael Squillace, Heather Swayne, Gregg Vanderheiden, Carlos Velasco, and Jason White</p>
+ <p>没有<a href="http://www.w3.org/TR/ATAG10/#acknowledgments">ATAG 1.0贡献者们</a>的工作，这篇文档是不可能形成的。</p>
+ <p>本出版物的部分资金来自美国教育部的联邦基金，国家残疾和康复研究所（NIDRR），合同号为ED-OSE-10-C-0067。本出版物的内容不一定反映美国教育部的观点或政策，提及的商业名称、商业产品或组织不暗示美国政府的认可。</p>
+ <hr />
+
+</div><!-- sect-acknowledements -->
+ 
+
+<div class="gl-only">
+ <p align="center">[<a href="#contents">内容</a>]</p>
+
+</div>
+<!-- techs-only -->
+ 
+<script src="https://www.w3.org/scripts/TR/fixup.js"></script></body>
+</html>
