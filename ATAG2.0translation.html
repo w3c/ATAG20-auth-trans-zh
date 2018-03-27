@@ -449,7 +449,7 @@ div.toc ul.toc li ul.toc li ul.toc li a {
  </ul>
  <p>有关ATAG技术和教育资料的链接，请参阅<a href="http://www.w3.org/WAI/intro/atag.php">创作工具辅助功能指南（ATAG）概述</a>。</p>
  <h3><a name="intro_understand_levels_conformance" id="intro_understand_levels_conformance"></a>一致性级别</h3>
- <p>为了保证在<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">创作工具</a>的开发中使用ATAG 2.0和<a href="#conf-rel-wcag">WCAG 2.0</a>WCAG 2.0的程序尽可能简单，ATAG 2.0共享了<a href="#conf-rel-wcag">WCAG 2.0</a>3级一致性模型：A级（最低），AA级（中等），AAA级（最高）。<span class="gl-only">有关更多信息，请参阅<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#intro_understand_levels_conformance">理解一致性级别</a>。</span></p>
+ <p>为了保证在<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">创作工具</a>的开发中使用ATAG 2.0和<a href="#conf-rel-wcag">WCAG 2.0</a>的程序尽可能简单，ATAG 2.0共享了<a href="#conf-rel-wcag">WCAG 2.0</a>的三级一致性模型：A级（最低），AA级（中等），AAA级（最高）。<span class="gl-only">有关更多信息，请参阅<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#intro_understand_levels_conformance">理解一致性级别</a>。</span></p>
 
   
   
@@ -693,7 +693,7 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 
             
    </div><!-- sc-level -->
-   <h3 class="guideline"><a name="gl_a32" id="gl_a32"></a>指南A.3.2 （在开发工具界面中）应向开发者提供足够的时间
+   <h3 class="guideline"><a name="gl_a32" id="gl_a32"></a>指南A.3.2：（在开发工具界面中）应向开发者提供足够的时间
 
 <span class="gl-only">[<a href="http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a32">实施A.3.2</a>]</span>
 </h3>
@@ -980,20 +980,19 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 
 <div id="subsect-support-production">
 
-<h2><a id="part_b" name="part_b"></a>Part B 支持无障碍内容的生成</h2>
 
-<h3 id="part_b-notes"><a name="part_b_applic_notes" id="part_b_applic_notes"></a>Part B 适用性一致性说明</h3>
+<h3 id="part_b-notes"><a name="part_b_applic_notes" id="part_b_applic_notes"></a>B部分 适用性一致性说明</h3>
 <ol>
-     <li><a name="part_b_applic_note_1" id="part_b_applic_note_1"></a><strong class="handle">开发者可用性：</strong>涉及<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>的Part B的成功标准仅在<a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">开发期</a></li>
-     <li><strong class="handle"><a name="part_b_applic_note_2" id="part_b_applic_note_2"></a>开发者（开发工具）控制：</strong>Part B的成功标准只适用于<a class="termdef" href="#def-Developer" title="definition: authoring tool developers">开发者</a>（开发工具）提供的<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>。这不包括除了开发工具开发者以外的组织对其的修改（例如，第三方插件，用户自定义<a href="#def-Template" title="definition: template" class="termdef">模板</a>，用户修改默认设置）。</li>
+     <li><a name="part_b_applic_note_1" id="part_b_applic_note_1"></a><strong class="handle">开发者可用性：</strong>涉及<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>的B部分的成功标准仅在<a href="#def-Authoring-Session" title="definition: authoring session" class="termdef">开发期</a></li>
+     <li><strong class="handle"><a name="part_b_applic_note_2" id="part_b_applic_note_2"></a>开发者（开发工具）控制：</strong>B部分的成功标准只适用于<a class="termdef" href="#def-Developer" title="definition: authoring tool developers">开发者</a>（开发工具）提供的<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>。这不包括除了开发工具开发者以外的组织对其的修改（例如，第三方插件，用户自定义<a href="#def-Template" title="definition: template" class="termdef">模板</a>，用户修改默认设置）。</li>
 
      <li><strong class="handle"><a name="part_b_applic_note_3" id="part_b_applic_note_3"></a>开发期结束后的适用性：</strong><a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>有责任保证，在<a href="#def-End-Auth-Session" title="definition: end of an authoring session" class="termdef">开发期结束点</a>之后由其自动生成的<a href="#def-Accessible-Web-Content" class="termdef" title="definition: accessible web content">网页内容无障碍(WCAG)</a>（详见<a href="#sc_b111">成功标准 B.1.1.1</a>）。例如，如果开发者（开发工具）改变了内容管理系统的网站<a href="#def-Template" title="definition: template" class="termdef">模板</a>，开发工具不负责保证由开发者造成的内容无障碍访问性的改变，无论是<a class="termdef" href="#def-Content-Author-Gen" title="definition: author generated content">开发者生成</a>的，或者是由开发者指定的其他系统<span class="sc"><a href="#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">自动生成</a></span>的（例如，第三方供稿）。<br />
 
      </li>
-     <li><strong class="handle"><a name="part_b_applic_note_4" id="part_b_applic_note_4"></a>开发系统：</strong>对于ATAG 2.0对<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>的定义，许多软件可以被同时使用以满足Part B的要求（例如，一个开发工具可以利用第三方软件的无障碍<a href="#def-Checking" title="definition: checking" class="termdef">检测</a>工具）。</li>
-     <li><strong class="handle"><a name="part_b_applic_note_5" id="part_b_applic_note_5"></a>满足Part B无障碍功能的要求的特性：</strong><a href="#part_a">A部分</a>的成功标准适用于整个<a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">开发工具界面</a>，包括所有为满足Part B中成功标准的任何特征（例如，校验工具，修复工具，教程，文档）。</li>
+     <li><strong class="handle"><a name="part_b_applic_note_4" id="part_b_applic_note_4"></a>开发系统：</strong>对于ATAG 2.0对<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>的定义，许多软件可以被同时使用以满足B部分的要求（例如，一个开发工具可以利用第三方软件的无障碍<a href="#def-Checking" title="definition: checking" class="termdef">检测</a>工具）。</li>
+     <li><strong class="handle"><a name="part_b_applic_note_5" id="part_b_applic_note_5"></a>满足B部分无障碍功能的要求的特性：</strong><a href="#part_a">A部分</a>的成功标准适用于整个<a href="#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">开发工具界面</a>，包括所有为满足B部分中成功标准的任何特征（例如，校验工具，修复工具，教程，文档）。</li>
 
-     <li><strong class="handle"><a name="part_b_applic_note_6" id="part_b_applic_note_6"></a>多重开发角色：</strong>一些<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>包括多重<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>角色，每一个角色都有不同的视图<a href="#def-Authoring-Permission" title="definition: author permission" class="termdef">权限</a>和编辑许可（例如，一个内容管理系统可能划分如下角色：设计人员，内容作者，质量把关）在这些情况下，Part B的成功标准应满足整个开发工具，而不是仅仅针对某一个特定的开发角色的视图。<a class="termdef" href="#def-Accessible-Content-Support-Features" title="definition: accessible content support features">无障碍内容支持特性</a>应该对任何开发角色都适用，这是很有用的。</li>
+     <li><strong class="handle"><a name="part_b_applic_note_6" id="part_b_applic_note_6"></a>多重开发角色：</strong>一些<a class="termdef" href="#def-Authoring-Tool" title="definition: authoring tool">开发工具</a>包括多重<a href="#def-Author" title="definition: authors" class="termdef">开发者</a>角色，每一个角色都有不同的视图<a href="#def-Authoring-Permission" title="definition: author permission" class="termdef">权限</a>和编辑许可（例如，一个内容管理系统可能划分如下角色：设计人员，内容作者，质量把关）在这些情况下，B部分的成功标准应满足整个开发工具，而不是仅仅针对某一个特定的开发角色的视图。<a class="termdef" href="#def-Accessible-Content-Support-Features" title="definition: accessible content support features">无障碍内容支持特性</a>应该对任何开发角色都适用，这是很有用的。</li>
      <li><strong class="handle"><a name="part_b_applic_note_7" id="part_a_applic_note_7"></a>未识别内容：</strong>当成功标准要求开发工具根据语义标准来分析网页内容，那么该标准只对于那些可被程序编码的语义适用（例如，当图像的文本描述被标记编发，它只能被认为是<a class="termdef" href="#def-Text-Alternatives" title="text alternatives for non-text content">非文本内容的替代文本</a>）。</li>
    </ol>
 
@@ -1688,7 +1687,7 @@ div.toc ul.toc li ul.toc li ul.toc li a {
 	
 	<dt><dfn><a id="def-Author" name="def-Author"></a>开发者（authors）</dfn></dt>
 
-	<dd>指使用<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>进行创作或修改<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>的人。此术语涵盖了内容创作者、设计者、编程者、发布者、测试者等等（详见<a href="#part_b_applic_note_6">Part B 一致性适用 注6：多种开发角色</a>）。有些开发工具可以通过管理<a href="#def-Authoring-Permission" title="definition: author permission" class="termdef">开发许可</a>来控制可以成为开发者的人选。</dd>
+	<dd>指使用<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">开发工具</a>进行创作或修改<a class="termdef" href="#def-Web-Content" title="definition: web content">网页内容</a>的人。此术语涵盖了内容创作者、设计者、编程者、发布者、测试者等等（详见<a href="#part_b_applic_note_6">B部分一致性适用 注6：多种开发角色</a>）。有些开发工具可以通过管理<a href="#def-Authoring-Permission" title="definition: author permission" class="termdef">开发许可</a>来控制可以成为开发者的人选。</dd>
 	<dt><a id="def-Authoring-Permission" name="def-Authoring-Permission"><dfn>开发许可（authoring permission）
 </dfn></a></dt>
 	<dd>指对特定<a href="#def-Web-Content" title="definition: web content" class="termdef">网页内容</a>进行修改的授权。
